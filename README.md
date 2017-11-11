@@ -1,4 +1,4 @@
-# Data science portfolio by Bill Steimel
+# Data Science Portfolio by Bill Steimel
 
 This portfolio is a compilation of notebooks which I created for data analysis or for exploration of machine learning algorithms. 
 
@@ -19,3 +19,7 @@ This portfolio is a compilation of notebooks which I created for data analysis o
 ## Data exploration and analysis
 
 ## Data Science for Business Intelligence Techniques
+
+## Masters Data Science Presentations 
+
+## Masters Research Reviews/Summary

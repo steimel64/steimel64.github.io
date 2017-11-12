@@ -23,3 +23,6 @@ This portfolio is a compilation of notebooks which I created for data analysis o
 ## Masters Data Science Presentations 
 
 ## Masters Research Reviews/Summary
+
+## Data Science Related Mooc's 
+TitleR Programming: Advanced Analytics In R For Data Science

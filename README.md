@@ -24,7 +24,8 @@ This portfolio is a compilation of notebooks which I created for data analysis o
 
 ## Masters Research Reviews/Summary
 
-## Data Science Related Mooc's 
+## Data Science Related MOOC's 
+Listed below are various MOOC's (online courses) I completed in my free time to develop skills in Data Science. 
 * **R Programming** - John Hopkins University- Coursera - 08/2016 
 * **The Basics of Scrum, Agile and Project Delivery** -Udemy - 12/2016
 * **The Complete SQL Bootcamp** - Udemy - 01/2017

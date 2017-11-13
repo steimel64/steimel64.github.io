@@ -4,7 +4,7 @@ This portfolio is a compilation of notebooks which I created for data analysis o
 
 ## Classification problems.
 
-### Iris Classification: Decision Tree Techniques
+### Iris Classification: Decision Tree Techniques (Python)
 [Github](https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Iris%20Notebook.ipynb) 
 
 As quoted from the Kaggle description for this dataset, the Iris dataset was used in Fishers classic 1936 paper, “The Use of Multiple Measurements in Taxonomic Problems”. For the purpose of this project I have imported it from the UCI Machine Learning Repository.
@@ -13,7 +13,7 @@ I decided to practice Decision Tree Algorithms with this dataset to increase my 
 
 ## Regression problems.
 
-### House Prices: Decision Tree Techniques
+### House Prices: Decision Tree Techniques (Python) 
 [Github](https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Boston%20Housing%20Notebook.ipynb)
 
 The Boston Housing Prices dataset is a famous dataset also often used by Machine Learning students to develop their understanding of regression problems. The dataset contains 506 observations and 13 predictive features. These features are used to predict the median housing value in neighborhoods in the Boston Suburbs which can have heavy applications to real estate pricing. 

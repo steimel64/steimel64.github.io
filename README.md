@@ -2,8 +2,6 @@
 
 This portfolio is a compilation of notebooks which I created for data analysis or for exploration of machine learning algorithms. 
 
-!(https://cdn-images-1.medium.com/max/1416/1*WZks-LUukbigGIkcQL0h-g.jpeg"")
-
 ## Classification problems.
 
 ### Iris Classification: Decision Tree Techniques

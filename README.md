@@ -5,10 +5,15 @@ This portfolio is a compilation of notebooks which I created for data analysis o
 ## Classification problems.
 
 ### Iris Classification: Decision Tree Techniques
+[Github](https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Iris%20Notebook.ipynb) 
 
 ## Regression problems.
 
 ### House Prices: Decision Tree Techniques
+[Github](https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Boston%20Housing%20Notebook.ipynb)
+
+Banks strive to increase the efficiency of their contacts with customers. One of the areas which require this is offering new products to existing clients (cross-selling). Instead of offering new products to all clients, it is a good idea to predict the probability of a positive response. Then the offers could be sent to those clients, for whom the probability of response is higher than some threshold value.
+In this notebook I try to solve this problem.
 
 ## Natural language processing.
 

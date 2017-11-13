@@ -2,7 +2,7 @@
 
 This portfolio is a compilation of notebooks which I created for data analysis or for exploration of machine learning algorithms. 
 
-![alt text](https://cdn-images-1.medium.com/max/1416/1*WZks-LUukbigGIkcQL0h-g.jpeg"")
+!(https://cdn-images-1.medium.com/max/1416/1*WZks-LUukbigGIkcQL0h-g.jpeg"")
 
 ## Classification problems.
 

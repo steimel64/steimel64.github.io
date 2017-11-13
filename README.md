@@ -1,6 +1,6 @@
 # Data Science Portfolio by Bill Steimel (WIP)
 
-This portfolio is a compilation of notebooks which I created for data analysis or for exploration of machine learning algorithms. 
+This portfolio is a compilation of notebooks which I created for data analysis or for exploration of machine learning algorithms. Any experience relevant to Data Science is also listed in this portfolio. 
 
 ## Classification problems.
 

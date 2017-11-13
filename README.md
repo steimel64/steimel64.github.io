@@ -7,7 +7,7 @@ This portfolio is a compilation of notebooks which I created for data analysis o
 ### Iris Classification: Decision Tree Techniques (Python)
 [Github](https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Iris%20Notebook.ipynb) 
 
-As quoted from the Kaggle description for this dataset, the Iris dataset was used in Fishers classic 1936 paper, “The Use of Multiple Measurements in Taxonomic Problems”. For the purpose of this project I have imported it from the UCI Machine Learning Repository.
+As quoted from the Kaggle description for this dataset, the Iris dataset was used in Fishers classic 1936 paper, “The Use of Multiple Measurements in Taxonomic Problems”. 
 The Iris dataset is a famous dataset often used by Machine Learning students to develop their understanding of classification problems.The dataset contains 4 features which include the Sepal Length, Sepal Width, Petal Length, and Petal Width. These features are used to predict or classify the predictions into three species of Iris including the Iris-setosa, Iris-Versicolor, and Iris-Virginica.
 I decided to practice Decision Tree Algorithms with this dataset to increase my practical understanding of the algorithm as well as its prediction behavior.
 

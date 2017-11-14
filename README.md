@@ -20,14 +20,19 @@ The Boston Housing Prices dataset is a famous dataset also often used by Machine
 I decided to practice Regression Decision Tree Algorithms with this dataset to increase my practical understanding of the algorithm as well as its predictive behavior.
 
 ## Natural language processing.
+Coming Soon! 
 
 ## Clustering
+Coming Soon! 
 
 ## Neural networks
+Coming Soon! 
 
 ## Data exploration and analysis
+Coming Soon! 
 
 ## Data Science for Business Intelligence/Office Automation
+Coming Soon! 
 
 ## Masters Data Science Presentations 
 As a Masters Student at Sophia University my major is Green Science & Engineering with a focus on Machine Learning/Programming. Below are some sample presentations on various topics related to Machine Learning which I presented to my entire lab as part of my coursework in Information Science Seminar.

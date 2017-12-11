@@ -38,12 +38,13 @@ Coming Soon!
 As a Masters Student at Sophia University my major is Green Science & Engineering with a focus on Machine Learning/Programming. Below are some sample presentations on various topics related to Machine Learning which I presented to my entire lab as part of my coursework in Information Science Seminar.
 
 * **Decision Tree Models: Machine Learning & Operations Research Applications** - 11/09/2017
+* **Machine Learning Basics, End-to-End Machine Learning, Linear Regression** - 12/07/2017
 
 ## Masters Research Reviews/Summary
 Below are some sample research reviews which were presented to all members of my lab as part of my coursework in Information Science Seminar. 
 
 * **A Few Useful Things to Know About Machine Learning - Pedro Domingos** - 11/09/2017 
-
+* **Literature Review on Feature Selection Methods for High-Dimensional Data - D. Asir Antony Gnana Singh, S. Appavu alias Balamurugan, E. Jebamalar Leavline** - 12/14/2017 
 
 ## Data Science Related MOOC's 
 Listed below are various MOOC's (online courses) I completed in my free time to develop skills in Data Science. 

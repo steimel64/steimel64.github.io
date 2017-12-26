@@ -55,6 +55,10 @@ Below are some sample research reviews which were presented to all members of my
 * **A Few Useful Things to Know About Machine Learning - Pedro Domingos** - 11/09/2017 
 * **Literature Review on Feature Selection Methods for High-Dimensional Data - D. Asir Antony Gnana Singh, S. Appavu alias Balamurugan, E. Jebamalar Leavline** - 12/14/2017 
 
+## Textbook Summaries 
+* **An Introduction to Statistical Learning with Applications in R: Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani**
+* **Pattern Recognition and Machine Learning: Christopher M.Bishop**
+
 ## Data Science Related MOOC's 
 Listed below are various MOOC's (online courses) I completed in my free time to develop skills in Data Science. 
 * **R Programming** - John Hopkins University- Coursera - 08/2016 

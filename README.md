@@ -19,6 +19,15 @@ I decided to practice Decision Tree Algorithms with this dataset to increase my 
 The Boston Housing Prices dataset is a famous dataset also often used by Machine Learning students to develop their understanding of regression problems. The dataset contains 506 observations and 13 predictive features. These features are used to predict the median housing value in neighborhoods in the Boston Suburbs which can have heavy applications to real estate pricing. 
 I decided to practice Regression Decision Tree Algorithms with this dataset to increase my practical understanding of the algorithm as well as its predictive behavior.
 
+### Wine Quality Prediction: Regression Techniques (Python) 
+[Github](https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Wine.ipynb)
+
+Wine is increasingly being enjoyed by consumers all around the globe. Quality is a very important factor for all consumers when choosing a product and thus a very important factor for finding the ideal wine to purchase.
+Wouldn't it be interesting to be able to predict wine quality through some of its psyicochemical attributes? This project seeks to develop a model that helps the wine industry predict a wines quality through these factors with the most accuracy. For the purpose of this analysis, I will be utilizing the red wine dataset of Portugal to predict wine quality based on their physicochemical features.
+ 
+I decided to practice new techniques like Cross-Validation and Hyperparameter tuning for this end-to-end Machine Learning project to improve my practical understanding of these techniques. 
+
+
 ## Natural language processing.
 Coming Soon! 
 
@@ -45,6 +54,10 @@ Below are some sample research reviews which were presented to all members of my
 
 * **A Few Useful Things to Know About Machine Learning - Pedro Domingos** - 11/09/2017 
 * **Literature Review on Feature Selection Methods for High-Dimensional Data - D. Asir Antony Gnana Singh, S. Appavu alias Balamurugan, E. Jebamalar Leavline** - 12/14/2017 
+
+## Textbook Summaries 
+* **An Introduction to Statistical Learning with Applications in R: Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani**
+* **Pattern Recognition and Machine Learning: Christopher M.Bishop**
 
 ## Data Science Related MOOC's 
 Listed below are various MOOC's (online courses) I completed in my free time to develop skills in Data Science. 

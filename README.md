@@ -52,7 +52,9 @@ As a Masters Student at Sophia University my major is Green Science & Engineerin
 ## Masters Research Reviews/Summary
 Below are some sample research reviews which were presented to all members of my lab as part of my coursework in Information Science Seminar. 
 
-* **A Few Useful Things to Know About Machine Learning - Pedro Domingos** - 11/09/2017 
+
+
+[* **A Few Useful Things to Know About Machine Learning - Pedro Domingos**](https://github.com/steimel64/steimel64.github.io/blob/master/ResearchReviews/AFewUsefulThingstoKnowAboutML.pdf)  - 11/09/2017 
 * **Literature Review on Feature Selection Methods for High-Dimensional Data - D. Asir Antony Gnana Singh, S. Appavu alias Balamurugan, E. Jebamalar Leavline** - 12/14/2017 
 
 ## Textbook Summaries 

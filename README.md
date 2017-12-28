@@ -46,8 +46,9 @@ Coming Soon!
 ## Masters Data Science Presentations 
 As a Masters Student at Sophia University my major is Green Science & Engineering with a focus on Machine Learning/Programming. Below are some sample presentations on various topics related to Machine Learning which I presented to my entire lab as part of my coursework in Information Science Seminar.
 
-* **Decision Tree Models: Machine Learning & Operations Research Applications** - 11/09/2017
-* **Machine Learning Basics, End-to-End Machine Learning, Linear Regression** - 12/07/2017
+[ **Decision Tree Models: Machine Learning & Operations Research Applications**](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/DecisionTreeModelsML_OR.pdf)  - 11/09/2017 
+
+[ **Machine Learning Basics, End-to-End Machine Learning, Linear Regression** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/MLBasics.pdf)  - 12/07/2017
 
 ## Masters Research Reviews/Summary
 Below are some sample research reviews which were presented to all members of my lab as part of my coursework in Information Science Seminar. 

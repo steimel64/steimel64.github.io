@@ -63,6 +63,7 @@ Below are some sample research reviews which were presented to all members of my
 
 ## Data Science Related MOOC's 
 Listed below are various MOOC's (online courses) I completed in my free time to develop skills in Data Science. 
+
 [ **R Programming** ](https://www.coursera.org/account/accomplishments/certificate/YLPTQ5LKZT4P) - John Hopkins University- Coursera - 08/2016
 
 [ **The Complete SQL Bootcamp** ](https://www.udemy.com/certificate/UC-LCCKRLTT/) -Udemy - 12/2016

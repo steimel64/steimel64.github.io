@@ -38,10 +38,11 @@ Coming Soon!
 Coming Soon! 
 
 ## Data exploration and analysis
-Coming Soon! 
 
-## Data Science for Business Intelligence/Office Automation
-Coming Soon! 
+### Data Visualization/Exploration Project: Global Terrorism (Python) 
+[Github](https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Terrorism/Terrorism.ipynb)
+
+The dataset comes from the Global Terrorism Database which details more than 170,000 terrorist attacks worldwide between 1970 and 2016.This project seeks to explore, visualize, and analyze terrorism Trends from a global perspective as well as from the perspective of Japan and the United States. I was able to apply various techniques for data exploration and map visualizations through Python. 
 
 ## Masters Data Science Presentations 
 As a Masters Student at Sophia University my major is Green Science & Engineering with a focus on Machine Learning/Programming. Below are some sample presentations on various topics related to Machine Learning which I presented to my entire lab as part of my coursework in Information Science Seminar.
@@ -50,6 +51,8 @@ As a Masters Student at Sophia University my major is Green Science & Engineerin
 
 [ **Machine Learning Basics, End-to-End Machine Learning, Linear Regression** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/MLBasics.pdf)  - 12/07/2017
 
+[ **Machine Learning (Classification)** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/Classification.pdf)  - 01/18/2018
+
 ## Masters Research Reviews/Summary
 Below are some sample research reviews which were presented to all members of my lab as part of my coursework in Information Science Seminar. 
 
@@ -57,9 +60,7 @@ Below are some sample research reviews which were presented to all members of my
 
 [ **Literature Review on Feature Selection Methods for High-Dimensional Data - D. Asir Antony Gnana Singh, S. Appavu alias Balamurugan, E. Jebamalar Leavline** ](https://github.com/steimel64/steimel64.github.io/blob/master/ResearchReviews/FeatureSelection.pdf)  - 12/14/2017 
 
-## Textbook Summaries 
-* **An Introduction to Statistical Learning with Applications in R: Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani**
-* **Pattern Recognition and Machine Learning: Christopher M.Bishop**
+## Research Papers 
 
 ## Data Science Related MOOC's 
 Listed below are various MOOC's (online courses) I completed in my free time to develop skills in Data Science. 

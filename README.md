@@ -38,7 +38,11 @@ Coming Soon!
 Coming Soon! 
 
 ## Data exploration and analysis
-Coming Soon! 
+
+### Data Visualization/Exploration Project Terrorism (Python) 
+[Github](https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Terrorism/Terrorism.ipynb)
+
+The dataset comes from the Global Terrorism Database which details more than 170,000 terrorist attacks worldwide between 1970 and 2016.This project seeks to explore, visualize, and analyze terrorism Trends from a global perspective as well as from the perspective of Japan and the United States. I was able to apply various techniques for data exploration and map visualizations through Python. 
 
 ## Masters Data Science Presentations 
 As a Masters Student at Sophia University my major is Green Science & Engineering with a focus on Machine Learning/Programming. Below are some sample presentations on various topics related to Machine Learning which I presented to my entire lab as part of my coursework in Information Science Seminar.

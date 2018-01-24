@@ -47,8 +47,7 @@ As a Masters Student at Sophia University my major is Green Science & Engineerin
 
 [ **Machine Learning Basics, End-to-End Machine Learning, Linear Regression** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/MLBasics.pdf)  - 12/07/2017
 
-[ **Machine Learning (Classification)** ]
-(https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/Classification.pdf)  - 01/18/2018
+[ **Machine Learning (Classification)** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/Classification.pdf)  - 01/18/2018
 
 ## Masters Research Reviews/Summary
 Below are some sample research reviews which were presented to all members of my lab as part of my coursework in Information Science Seminar. 

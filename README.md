@@ -39,7 +39,7 @@ Coming Soon!
 
 ## Data exploration and analysis
 
-### Data Visualization/Exploration Project Terrorism (Python) 
+### Data Visualization/Exploration Project: Global Terrorism (Python) 
 [Github](https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Terrorism/Terrorism.ipynb)
 
 The dataset comes from the Global Terrorism Database which details more than 170,000 terrorist attacks worldwide between 1970 and 2016.This project seeks to explore, visualize, and analyze terrorism Trends from a global perspective as well as from the perspective of Japan and the United States. I was able to apply various techniques for data exploration and map visualizations through Python. 

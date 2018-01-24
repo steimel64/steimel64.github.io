@@ -40,15 +40,15 @@ Coming Soon!
 ## Data exploration and analysis
 Coming Soon! 
 
-## Data Science for Business Intelligence/Office Automation
-Coming Soon! 
-
 ## Masters Data Science Presentations 
 As a Masters Student at Sophia University my major is Green Science & Engineering with a focus on Machine Learning/Programming. Below are some sample presentations on various topics related to Machine Learning which I presented to my entire lab as part of my coursework in Information Science Seminar.
 
 [ **Decision Tree Models: Machine Learning & Operations Research Applications**](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/DecisionTreeModelsML_OR.pdf)  - 11/09/2017 
 
 [ **Machine Learning Basics, End-to-End Machine Learning, Linear Regression** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/MLBasics.pdf)  - 12/07/2017
+
+[ **Machine Learning (Classification)** ]
+(https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/Classification.pdf)  - 01/18/2018
 
 ## Masters Research Reviews/Summary
 Below are some sample research reviews which were presented to all members of my lab as part of my coursework in Information Science Seminar. 
@@ -57,9 +57,7 @@ Below are some sample research reviews which were presented to all members of my
 
 [ **Literature Review on Feature Selection Methods for High-Dimensional Data - D. Asir Antony Gnana Singh, S. Appavu alias Balamurugan, E. Jebamalar Leavline** ](https://github.com/steimel64/steimel64.github.io/blob/master/ResearchReviews/FeatureSelection.pdf)  - 12/14/2017 
 
-## Textbook Summaries 
-* **An Introduction to Statistical Learning with Applications in R: Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani**
-* **Pattern Recognition and Machine Learning: Christopher M.Bishop**
+## Research Papers 
 
 ## Data Science Related MOOC's 
 Listed below are various MOOC's (online courses) I completed in my free time to develop skills in Data Science. 

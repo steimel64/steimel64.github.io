@@ -45,7 +45,7 @@ Coming Soon!
 The dataset comes from the Global Terrorism Database which details more than 170,000 terrorist attacks worldwide between 1970 and 2016.This project seeks to explore, visualize, and analyze terrorism Trends from a global perspective as well as from the perspective of Japan and the United States. I was able to apply various techniques for data exploration and map visualizations through Python. 
 
 ## Masters Data Science Presentations 
-As a Masters Student at Sophia University my major is Green Science & Engineering with a focus on Machine Learning/Programming. Below are some sample presentations on various topics related to Machine Learning which I presented to my entire lab under the guidance of [ Yuichiro Miyamoto ](http://www.ics.sophia.ac.jp/miyamoto/) as part of my coursework in Information Science Seminar.
+As a Masters Student at Sophia University my major is Green Science & Engineering with a focus on Machine Learning/Programming. Below are some sample presentations on various topics related to Machine Learning which I presented to my entire lab under the guidance of [ Yuichiro Miyamoto, PhD ](http://www.ics.sophia.ac.jp/miyamoto/) as part of my coursework in Information Science Seminar.
 
 [ **Decision Tree Models: Machine Learning & Operations Research Applications**](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/DecisionTreeModelsML_OR.pdf)  - 11/09/2017 
 
@@ -55,7 +55,7 @@ As a Masters Student at Sophia University my major is Green Science & Engineerin
 
 ## Masters Research Reviews/Summary
 Below are some sample research reviews which were presented to all members of my lab under the guidance of 
-[ Yuichiro Miyamoto ](http://www.ics.sophia.ac.jp/miyamoto/) as part of my coursework in Information Science Seminar. 
+[ Yuichiro Miyamoto, PhD ](http://www.ics.sophia.ac.jp/miyamoto/) as part of my coursework in Information Science Seminar. 
 
 [ **A Few Useful Things to Know About Machine Learning - Pedro Domingos**](https://github.com/steimel64/steimel64.github.io/blob/master/ResearchReviews/AFewUsefulThingstoKnowAboutML.pdf)  - 11/09/2017 
 

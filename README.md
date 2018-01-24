@@ -82,9 +82,3 @@ Listed below are various MOOC's (online courses) I completed in my free time to 
 [ **Python A-Z: Python For Data Science With Real Exercises** ](https://www.udemy.com/certificate/UC-H1JDL87H/) - Udemy - 09/2017 
 
 [ **Machine Learning A-Z™: Hands-On Python & R In Data Science** ](https://www.udemy.com/certificate/UC-R4KZFHB1/) - Udemy - 10/2017
-
-## Tableau Resume
-<html>
-<iframe src="http://public.tableausoftware.com/views/public_exercise/Dashboard1?:showVizHome=no&:embed=true"
- width="645" height="955"></iframe>
- </html>

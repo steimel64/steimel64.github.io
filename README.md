@@ -64,6 +64,10 @@ Below are some sample research reviews which were presented to all members of my
 ## Research Papers 
 [ **Artificial Intelligence & Data Science's Impact on Sustainability and Creating Cities of the Future** ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/Artificial%20Intelligence%20%26%20Data%20Science%E2%80%99s%20Impact%20on%20Sustainability%20and%20Creating%20Cities%20of%20the%20Future.pdf)
 
+[ **Environment and Supply Chain Management: Helicopter Design ANOVA** ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/Environment%20and%20Supply%20Chain%20Management%20ANOVA.pdf)
+This research paper was created in collaboration with Lucas Roth Below for a Project in Environment and Supply Chain Management. This paper covers the entire experimental design process for building energy efficient helicopters through SPSS and Analysis of Variance. 
+
+
 ## Data Science Related MOOC's 
 Listed below are various MOOC's (online courses) I completed in my free time to develop skills in Data Science. 
 

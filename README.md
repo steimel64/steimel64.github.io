@@ -28,14 +28,23 @@ Wouldn't it be interesting to be able to predict wine quality through some of it
 I decided to practice new techniques like Cross-Validation and Hyperparameter tuning for this end-to-end Machine Learning project to improve my practical understanding of these techniques. 
 
 
-## Natural language processing.
+## Natural language processing
 Coming Soon! 
+
+## Recommender Systems
+[Github](https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Anime%20Recommender/Recommender.ipynb)
+
+My animelist.net is a popular site for viewing Anime online which is self proclaimed as the world's most active online anime and manga community and database. The Anime Recommendations database provided by animelist.net contains user review data from 76,000 users and wouldn't it be cool to generate some Recommendations based on this data? 
+
+In this notebook I practiced building my first Collaborative Filtering Recommender System in Python with the K-Nearest Neighbors algorithm with pretty decent results. 
+
 
 ## Clustering
 Coming Soon! 
 
 ## Neural networks
 Coming Soon! 
+
 
 ## Data exploration and analysis
 

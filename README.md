@@ -53,6 +53,9 @@ As a Masters Student at Sophia University my major is Green Science & Engineerin
 
 [ **Machine Learning (Classification)** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/Classification.pdf)  - 01/18/2018
 
+[ **Introduction to Recommender Systems** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/Intro_RecommenderSystems.pdf)  - 04/25/2018
+
+
 ## Masters Research Reviews/Summary
 Below are some sample research reviews which were presented to all members of my lab under the guidance of 
 [ Yuichiro Miyamoto, PhD ](http://www.ics.sophia.ac.jp/miyamoto/) as part of my coursework in Information Science Seminar. 
@@ -61,7 +64,10 @@ Below are some sample research reviews which were presented to all members of my
 
 [ **Literature Review on Feature Selection Methods for High-Dimensional Data - D. Asir Antony Gnana Singh, S. Appavu alias Balamurugan, E. Jebamalar Leavline** ](https://github.com/steimel64/steimel64.github.io/blob/master/ResearchReviews/FeatureSelection.pdf)  - 12/14/2017 
 
-## Research Papers 
+[ **Deep Learning -Yann Lecun, Yoshua Bengio, Geoffrey Hinton** ](https://github.com/steimel64/steimel64.github.io/blob/master/ResearchReviews/DeepLearningSurvey.pdf) - 04/23/2018
+
+
+## Sustainability Research Papers 
 [ **Artificial Intelligence & Data Science's Impact on Sustainability and Creating Cities of the Future** ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/Artificial%20Intelligence%20%26%20Data%20Science%E2%80%99s%20Impact%20on%20Sustainability%20and%20Creating%20Cities%20of%20the%20Future.pdf)
 
 [ **Environment and Supply Chain Management: Helicopter Design ANOVA** ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/Environment%20and%20Supply%20Chain%20Management%20ANOVA.pdf)

@@ -67,6 +67,8 @@ Below are some sample research reviews which were presented to all members of my
 [ **Environment and Supply Chain Management: Helicopter Design ANOVA** ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/Environment%20and%20Supply%20Chain%20Management%20ANOVA.pdf)
 This research paper was created in collaboration with Lucas Roth Below for a Project in Environment and Supply Chain Management. This paper covers the entire experimental design process for building energy efficient helicopters through SPSS and Analysis of Variance. 
 
+[ **EIA scoping in England and Wales: Practitioner approaches, perspectives and constraints - Research Review** ]
+(https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/EIA_Review_UK_Wales.pdf) 
 
 ## Data Science Related MOOC's 
 Listed below are various MOOC's (online courses) I completed in my free time to develop skills in Data Science. 

@@ -58,9 +58,9 @@ As a Masters Student at Sophia University my major is Green Science & Engineerin
 
 [ **Decision Tree Models: Machine Learning & Operations Research Applications**](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/DecisionTreeModelsML_OR.pdf)  - 11/09/2017 
 
-[ **Machine Learning Basics, End-to-End Machine Learning, Linear Regression** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/MLBasics.pdf)  - 12/07/2017
+[ **Machine Learning Basics, End-to-End Machine Learning - Linear Regression** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/MLBasics.pdf)  - 12/07/2017
 
-[ **Machine Learning (Classification)** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/Classification.pdf)  - 01/18/2018
+[ **Machine Learning (Classification) - Logistic Regression ** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/Classification.pdf)  - 01/18/2018
 
 [ **Introduction to Recommender Systems** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/Intro_RecommenderSystems.pdf)  - 04/25/2018
 

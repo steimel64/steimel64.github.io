@@ -11,6 +11,8 @@ As quoted from the Kaggle description for this dataset, the Iris dataset was use
 The Iris dataset is a famous dataset often used by Machine Learning students to develop their understanding of classification problems.The dataset contains 4 features which include the Sepal Length, Sepal Width, Petal Length, and Petal Width. These features are used to predict or classify the predictions into three species of Iris including the Iris-setosa, Iris-Versicolor, and Iris-Virginica.
 I decided to practice Decision Tree Algorithms with this dataset to increase my practical understanding of the algorithm as well as its prediction behavior.
 
+##### Keywords: Decision Tree, RandomForest, Classification, Supervised Learning
+
 ## Regression problems.
 
 ### House Prices: Decision Tree Techniques (Python) 
@@ -18,6 +20,7 @@ I decided to practice Decision Tree Algorithms with this dataset to increase my 
 
 The Boston Housing Prices dataset is a famous dataset also often used by Machine Learning students to develop their understanding of regression problems. The dataset contains 506 observations and 13 predictive features. These features are used to predict the median housing value in neighborhoods in the Boston Suburbs which can have heavy applications to real estate pricing. 
 I decided to practice Regression Decision Tree Algorithms with this dataset to increase my practical understanding of the algorithm as well as its predictive behavior.
+##### Keywords: Decision Tree, Random Forest, Regression, Supervised Learning
 
 ### Wine Quality Prediction: Regression Techniques (Python) 
 [Github](https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Wine.ipynb)
@@ -26,6 +29,8 @@ Wine is increasingly being enjoyed by consumers all around the globe. Quality is
 Wouldn't it be interesting to be able to predict wine quality through some of its psyicochemical attributes? This project seeks to develop a model that helps the wine industry predict a wines quality through these factors with the most accuracy. For the purpose of this analysis, I will be utilizing the red wine dataset of Portugal to predict wine quality based on their physicochemical features.
  
 I decided to practice new techniques like Cross-Validation and Hyperparameter tuning for this end-to-end Machine Learning project to improve my practical understanding of these techniques. 
+
+##### Keywords: Linear Regression, Random Forest, Regression, Cross-Validation, Hyperparameter Tuning, GridSearch, Supervised Learning
 
 
 ## Natural language processing
@@ -37,6 +42,8 @@ Coming Soon!
 My animelist.net is a popular site for viewing Anime online which is self proclaimed as the world's most active online anime and manga community and database. The Anime Recommendations database provided by animelist.net contains user review data from 76,000 users and wouldn't it be cool to generate some Recommendations based on this data? 
 
 In this notebook I practiced building my first Collaborative Filtering Recommender System in Python with the K-Nearest Neighbors algorithm with pretty decent results. 
+
+##### Keywords: Collaborative Filtering, K-Nearest Neighbors 
 
 
 ## Clustering
@@ -52,6 +59,8 @@ Coming Soon!
 [Github](https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Terrorism/Terrorism.ipynb)
 
 The dataset comes from the Global Terrorism Database which details more than 170,000 terrorist attacks worldwide between 1970 and 2016.This project seeks to explore, visualize, and analyze terrorism Trends from a global perspective as well as from the perspective of Japan and the United States. I was able to apply various techniques for data exploration and map visualizations through Python. 
+
+##### Keywords: Data Visualization, Data Exploration, Matplotlib, Seaborn 
 
 ## Masters Data Science Presentations 
 As a Masters Student at Sophia University my major is Green Science & Engineering with a focus on Machine Learning/Programming. Below are some sample presentations on various topics related to Machine Learning which I presented to my entire lab under the guidance of [ Yuichiro Miyamoto, PhD ](http://www.ics.sophia.ac.jp/miyamoto/) as part of my coursework in Information Science Seminar.

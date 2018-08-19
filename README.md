@@ -113,7 +113,7 @@ This research paper was created in collaboration with Lucas Roth Below for a Pro
 
 [ **New York City’s Environmental Policy Implementation - from the perspective of Technology and Innovation - Report** ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/New_York_Env_Policy_Technology.pdf) 
 
-[ **New York City’s Environmental Policy Implementation - from the perspective of Technology and Innovation- PPT** ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/NYC_Env_Policy_Review.pdf) 
+    [ **New York City’s Environmental Policy Implementation - from the perspective of Technology and Innovation- PPT** ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/NYC_Env_Policy_Review.pdf) 
 
 ## Data Science Related MOOC's 
 Listed below are various MOOC's (online courses) I completed in my free time to develop skills in Data Science. 

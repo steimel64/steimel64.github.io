@@ -73,6 +73,17 @@ As a Masters Student at Sophia University my major is Green Science & Engineerin
 
 [ **Introduction to Recommender Systems** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/Intro_RecommenderSystems.pdf)  - 04/25/2018
 
+[ **Computational Music 1s** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/ComputationalMusic.pdf)  - 05/16/2018
+
+[ **On the Class Imbalance Problem** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/Classimbalance.pdf)  - 05/30/2018
+
+[ **Computational Music 2** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/ComputationalMusic2.pdf)  - 06/20/2018
+
+[ **An Introduction to XGBoost and Gradient Boosting Machines** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/XGBoost.pdf)  - 07/04/2018
+
+[ **Data Visualization** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/DataVisualization.pdf)  - 08/01/2018
+
+
 
 ## Masters Research Reviews/Summary
 Below are some sample research reviews which were presented to all members of my lab under the guidance of 

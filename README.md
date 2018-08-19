@@ -73,6 +73,17 @@ As a Masters Student at Sophia University my major is Green Science & Engineerin
 
 [ **Introduction to Recommender Systems** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/Intro_RecommenderSystems.pdf)  - 04/25/2018
 
+[ **Computational Music 1s** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/ComputationalMusic.pdf)  - 05/16/2018
+
+[ **On the Class Imbalance Problem** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/Classimbalance.pdf)  - 05/30/2018
+
+[ **Computational Music 2** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/ComputationalMusic2.pdf)  - 06/20/2018
+
+[ **An Introduction to XGBoost and Gradient Boosting Machines** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/XGBoost.pdf)  - 07/04/2018
+
+[ **Data Visualization** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/DataVisualization.pdf)  - 08/01/2018
+
+
 
 ## Masters Research Reviews/Summary
 Below are some sample research reviews which were presented to all members of my lab under the guidance of 
@@ -83,6 +94,11 @@ Below are some sample research reviews which were presented to all members of my
 [ **Literature Review on Feature Selection Methods for High-Dimensional Data - D. Asir Antony Gnana Singh, S. Appavu alias Balamurugan, E. Jebamalar Leavline** ](https://github.com/steimel64/steimel64.github.io/blob/master/ResearchReviews/FeatureSelection.pdf)  - 12/14/2017 
 
 [ **Deep Learning -Yann Lecun, Yoshua Bengio, Geoffrey Hinton** ](https://github.com/steimel64/steimel64.github.io/blob/master/ResearchReviews/DeepLearningSurvey.pdf) - 04/23/2018
+
+[ **Data Clustering: 50 years beyond K-means - Anil K. Jain** ](https://github.com/steimel64/steimel64.github.io/blob/master/ResearchReviews/Clustering.pdf) - 06/11/2018
+
+[ **How to use t-SNE effectively- Martin Wattenberg** ](https://github.com/steimel64/steimel64.github.io/blob/master/ResearchReviews/t-SNE.pdf) - 07/16/2018
+
 
 
 ## Sustainability Research Papers 
@@ -97,7 +113,7 @@ This research paper was created in collaboration with Lucas Roth Below for a Pro
 
 [ **New York City’s Environmental Policy Implementation - from the perspective of Technology and Innovation - Report** ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/New_York_Env_Policy_Technology.pdf) 
 
-[ **New York City’s Environmental Policy Implementation - from the perspective of Technology and Innovation- PPT** ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/NYC_Env_Policy_Review.pdf) 
+  [ **New York City’s Environmental Policy Implementation - from the perspective of Technology and Innovation- PPT** ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/NYC_Env_Policy_Review.pdf) 
 
 ## Data Science Related MOOC's 
 Listed below are various MOOC's (online courses) I completed in my free time to develop skills in Data Science. 

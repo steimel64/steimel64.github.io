@@ -45,6 +45,7 @@ I decided to practice new techniques like Cross-Validation and Hyperparameter tu
 
 ### Spam Prediction: Naive Bayes Classifier/Bag Of Words (Python) 
 [Github](https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/NaiveBayesSpam.ipynb)
+
 This project seeks to develop a model that can predict whether an e-mail is considered spam or ham (normal) with the Naive Bayes Classifier and Bag of Words model. Naive Bayes Classifiers have been traditionally good at e-mail filtering and this notebook covers many topics like how to build a Machine Learning Model, Data Exploration, Data Cleaning, Text Preprocessing for NLP Data, Model Training, and Evaluation. 
 
 ##### Keywords: Naive Bayes, Bag Of Words, Classification, Supervised Learning

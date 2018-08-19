@@ -22,6 +22,14 @@ The Boston Housing Prices dataset is a famous dataset also often used by Machine
 I decided to practice Regression Decision Tree Algorithms with this dataset to increase my practical understanding of the algorithm as well as its predictive behavior.
 ##### Keywords: Decision Tree, Random Forest, Regression, Supervised Learning
 
+### Kings County Housing Prices: Decision Tree/Random Forest (Python) 
+[Github](https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/SeattleHousing.ipynb)
+
+The Kings County Housing Prices dataset is a dataset similar to the well known Boston Housing Prices dataset with a bit more feature complexity. This dataset contains house sale prices for King County, which includes Seattle. It also includes homes sold between May 2014 and May 2015. The goal of this project is to predict housing prices in King's County based on various house features. 
+
+##### Keywords: Decision Tree, Random Forest, Regression, Supervised Learning
+
+
 ### Wine Quality Prediction: Regression Techniques (Python) 
 [Github](https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Wine.ipynb)
 
@@ -34,7 +42,12 @@ I decided to practice new techniques like Cross-Validation and Hyperparameter tu
 
 
 ## Natural language processing
-Coming Soon! 
+
+### Spam Prediction: Naive Bayes Classifier/Bag Of Words (Python) 
+[Github](https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/NaiveBayesSpam.ipynb)
+This project seeks to develop a model that can predict whether an e-mail is considered spam or ham (normal) with the Naive Bayes Classifier and Bag of Words model. Naive Bayes Classifiers have been traditionally good at e-mail filtering and this notebook covers many topics like how to build a Machine Learning Model, Data Exploration, Data Cleaning, Text Preprocessing for NLP Data, Model Training, and Evaluation. 
+
+##### Keywords: Naive Bayes, Bag Of Words, Classification, Supervised Learning
 
 ## Recommender Systems
 [Github](https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Anime%20Recommender/Recommender.ipynb)
@@ -43,15 +56,20 @@ My animelist.net is a popular site for viewing Anime online which is self procla
 
 In this notebook I practiced building my first Collaborative Filtering Recommender System in Python with the K-Nearest Neighbors algorithm with pretty decent results. 
 
-##### Keywords: Collaborative Filtering, K-Nearest Neighbors 
+##### Keywords: Collaborative Filtering, K-Nearest Neighbors, Recommender Systems
 
 
 ## Clustering
 Coming Soon! 
 
 ## Neural networks
-Coming Soon! 
 
+### Hiragana Character Recognition with Keras and OpenCV (Python) 
+[Github](https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/HiraganaRecognition.ipynb)
+
+This project seeks to build a model that recognizes hiragana characters with a Convolutional Neural Network in Keras. This notebook utilizes a dataset from the National Diet Library (NDL Lab) that contains 60,000 images of 73 drawn hiragana characters. Character recognition or classification is becoming increasingly important and this project was a fun way to combine my interest in Japanese Language with an introduction to Convolutional Neural Networks. 
+
+##### Keywords: Keras, CNN, Classification, Supervised Learning 
 
 ## Data exploration and analysis
 
@@ -73,7 +91,7 @@ As a Masters Student at Sophia University my major is Green Science & Engineerin
 
 [ **Introduction to Recommender Systems** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/Intro_RecommenderSystems.pdf)  - 04/25/2018
 
-[ **Computational Music 1s** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/ComputationalMusic.pdf)  - 05/16/2018
+[ **Computational Music 1** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/ComputationalMusic.pdf)  - 05/16/2018
 
 [ **On the Class Imbalance Problem** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/Classimbalance.pdf)  - 05/30/2018
 

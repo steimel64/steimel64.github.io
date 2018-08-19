@@ -84,6 +84,11 @@ Below are some sample research reviews which were presented to all members of my
 
 [ **Deep Learning -Yann Lecun, Yoshua Bengio, Geoffrey Hinton** ](https://github.com/steimel64/steimel64.github.io/blob/master/ResearchReviews/DeepLearningSurvey.pdf) - 04/23/2018
 
+[ **Data Clustering: 50 years beyond K-means - Anil K. Jain** ](https://github.com/steimel64/steimel64.github.io/blob/master/ResearchReviews/Clustering.pdf) - 06/11/2018
+
+[ **How to use t-SNE effectively- Martin Wattenberg** ](https://github.com/steimel64/steimel64.github.io/blob/master/ResearchReviews/t-SNE.pdf) - 07/16/2018
+
+
 
 ## Sustainability Research Papers 
 [ **Artificial Intelligence & Data Science's Impact on Sustainability and Creating Cities of the Future** ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/Artificial%20Intelligence%20%26%20Data%20Science%E2%80%99s%20Impact%20on%20Sustainability%20and%20Creating%20Cities%20of%20the%20Future.pdf)

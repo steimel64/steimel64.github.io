@@ -13,6 +13,15 @@ I decided to practice Decision Tree Algorithms with this dataset to increase my 
 
 ##### Keywords: Decision Tree, RandomForest, Classification, Supervised Learning
 
+### Credit Fraud Detection: Logistic Regression / SMOTE Oversampling (Python)
+[Github](https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Fraud%20Analysis.ipynb) 
+
+Credit Fraud is a huge problem that we are all familiar with whether we have experienced it or not and a huge concern among consumers. This project seeks to develop a model that helps the financial industry predict whether a transaction is considered a fraud or not based on anonymized transactional features. I decided to undertake this project as I thought it would be interesting to be able to predict fraud with Machine Learning and Logistic Regression. I also wanted to further study oversampling techniques like SMOTE with a practical example.
+
+##### Keywords: Logistic Regression, Classification, Supervised Learning, Imbalanced Classification, SMOTE Oversampling 
+
+
+
 ## Regression problems.
 
 ### House Prices: Decision Tree Techniques (Python) 

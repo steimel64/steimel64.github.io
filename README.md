@@ -1,6 +1,6 @@
 # Data Science Portfolio by Bill Steimel
 
-This portfolio is a compilation of notebooks which I created for data analysis or for exploration of machine learning algorithms. Any experience relevant to Data Science is also listed in this portfolio. 
+This portfolio is a compilation of notebooks which I created for data analysis or for exploration of machine learning algorithms. Any experience relevant to Data Science is also listed in this portfolio. I am currently working on research related to Deep Learning for Music Generation as part of my Masters thesis which can also be found here.  
 
 ## Classification problems.
 

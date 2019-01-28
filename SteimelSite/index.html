@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--HEADER SECTION-->
+    <!-- Outside CSS Frameworks Used- Normalize/Grid
+        Normalize- Helps with rendering of elements to be more consistent
+        Grid- Grid is useful as it uses a grid system to help align elements;
+        for example classes of "col span-1-of-2" would create grid elements of approximately half the page width- 
+        This was used solely for alignment although I am still a beginner at using it-->
+    <head>
+        <link rel="stylesheet" type="text/css" href="outsidesources/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="outsidesources/css/grid.css">
+        <!-- CSS Style Sheet- All Formatting for sections is defined here-->
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <!-- Fonts- I downloaded google fonts (Lato) for this website-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+        <!--Title -->
+        <title>William Steimel</title>
+    </head>
+    
+    <!--Body Section Begin-->
+    <body>
+        <header class="index-page">
+            <!--Navigation Bar-->
+            <nav>
+                <div class="row">
+                    <!--Profile Photo-->
+                    <img src="resources/img/profile.jpeg" class="profile-pic">
+                    <!--Links to other Pages-->
+                    <ul class="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="hireme.html">Hire me</a></li>
+                        <li><a href="resources/data/WILLIAM STEIMEL 2019 Resume.pdf">Resume Download</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!--Header and Subheader of Page-->
+            <div class="title-page">
+                <h1>William Steimel</h1>
+                <p class="subheader">Reflections on Data Science, Music, and Sustainability</p>
+            </div>
+        </header>
+        <!--Projects Section - Code for some of my Machine Learning Projects-->
+        <section class="Projects">
+            <div class="row">
+                <h2>My Projects</h2>
+                Some sample Data Science projects that I have worked on in the past year.
+            </div>
+            <!-- grid.css is useful as I can set a span-1-of-3 for each project meaning each project will take up an equal 33.3% of the page-->
+            <!-- The code below contains three projects I worked on recently, Two methods for linking are used--->
+            <!-- The picture and the H3 header serve as hyperlinks to the projects while <p> contains the general description-->
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <br>
+                    <a href=https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/HiraganaRecognition.ipynb><img src="resources/img/Hiragana.png" class="project_img"></a>
+                    <a href=https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/HiraganaRecognition.ipynb class="test">
+                        <h3>Hiragana Character Recognition with Keras and OpenCV (Python)</h3></a>
+                        <p>This project seeks to build a model that recognizes hiragana characters with a 
+                                Convolutional Neural Network in Keras. This notebook utilizes a dataset from the National 
+                                Diet Library (NDL Lab) that contains 60,000 images of 73 drawn hiragana characters. 
+                                Character recognition or classification is becoming increasingly important and this 
+                                project was a fun way to combine my interest in Japanese Language with an 
+                                introduction to Convolutional Neural Networks.</p>
+                </div>
+                
+                <div class="col span-1-of-3">
+                    <br>
+                    <a href="https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Terrorism/Terrorism.ipynb"><img src="resources/img/secretarygeneral.png" class="project_img"></a>
+                    <a href="https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Terrorism/Terrorism.ipynb"><h3>Data Visualization/Exploration Project: Global Terrorism (Python)</h3></a>
+                    <p>The dataset comes from the Global Terrorism Database which details 
+                    more than 170,000 terrorist attacks worldwide between 1970 and 2016.
+                    This project seeks to explore, visualize, and analyze terrorism Trends 
+                    from a global perspective as well as from the perspective of Japan and the United States. 
+                    I was able to apply various techniques for data exploration and map visualizations through Python.</p>
+                </div>
+
+                <div class="col span-1-of-3">
+                    <br>
+                    <a href="https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Fraud%20Analysis.ipynb"><img src="resources/img/Fraud.png" class="project_img"></a>
+                    <a href="https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Fraud%20Analysis.ipynb"><h3>Credit Fraud Detection: Logistic Regression / SMOTE Oversampling (Python)</h3></a>
+                    <p>Credit Fraud is a huge problem that we are all familiar with whether we have experienced it or not and 
+                        a huge concern among consumers. This project seeks to develop a model
+                        that helps the financial industry predict whether a transaction is
+                        considered a fraud or not based on anonymized transactional features. 
+                        I decided to undertake this project as I thought it would be interesting to be able to predict fraud with Machine Learning 
+                        and Logistic Regression. I also wanted to further study oversampling techniques 
+                        like SMOTE with a practical example.
+                        </p>
+                </div>
+            </div>
+        </section>
+         <!--Projects Section - END-->
+         <!--Experience Section - This section details my work experience -->
+         <!--H3 is used for company name, H4 is used for title, H5 is used for location/Dates, p is used for description -->
+         <!-- Col span 1-of-3 is used for the photos, Col span 2-of-3 is used for the text -->
+         <section class="Experience">
+             <div class="row">
+                 <h2>Experience</h2>
+            </div>
+            <!-- Current job at Lombard Inc.-->
+            <div class ="row">
+                <div class="col span-1-of-3">
+                    <img src="resources/img/lombard.jpg" class="lombard"> 
+                </div>
+                <div class="col span-2-of-3">
+                    <h3>Lombard Inc. (CodExa)</h3>
+                    <h4>Machine Learning Intern</h4>
+                    <h5>Tokyo, Japan Since February 2018</h5>
+                    <p>My first experience working in a Japanese company, everyday has been a great opportunity to learn about Japanese business culture. I currently work with Lombard Inc. in a variety of ventures. I am primarily assisting 
+                       the CodExa online coding school platform by writing python tutorials for machine learning beginners. I was fortunate to be featured as co-author of an article in Nikkei Software titled "Machine Learning Process".
+                       I also contribute my analytical abilities through marketing related data analysis and modeling for their internal affiliate marketing application. </p>
+                </div>
+            </div>
+            <!-- Work at ADP-->
+            <div class ="row">
+                <div class="col span-1-of-3">
+                    <img src="resources/img/ADP.png" class="ADP"> 
+                </div>
+                <div class="col span-2-of-3">
+                    <h3>ADP</h3>
+                    <h4>IT Service Manager, I&O Analyst, Business Process Analyst Intern</h4>
+                    <h5>Roseland, NJ Mar 2015-Sep 2017</h5>
+                    <p>As a member of the ETG Service Management Team, I was responsible for management of overall quality of the Data Center Site Management, IT Hosting Operations, Critical Incident Response Team, Enterprise Change Control, and Mainframe and Midrange Technology IT Service Areas. 
+                       I started as an intern with the company and slowly worked my way up from analyst to Service Manager in 3 years mainly involved with process analysis, ISO Audits, and Change Management. 
+                    </p>
+                </div>
+            </div>
+            <!-- Work at DPI/NGO-->
+            <div class ="row">
+                <div class="col span-1-of-3">
+                    <img src="resources/img/DPINGO.png" class="DPINGO"> 
+                </div>
+                <div class="col span-2-of-3">
+                    <h3>Felician University Global Academic Initiatives</h3>
+                    <h4>NGO Representative to the United Nations Department of Public Information</h4>
+                    <h5>New York, NY 
+                        <br>Jan 2012-June 2012 
+                        <br>Jan 2015-May 2015</h5>
+                        <p>As part of my coursework, I was fortunate to be able to participate in a fellowship and seminar for one year at the United Nations. Through these programs, I attended and contributed to weekly conferences held by the UN Department of Public Information, various diplomats, and experts in their fields. 
+                           After 6 months in the program, I was appointed as NGO representative to the United Nations Department of Public Information for Felician College. This experience allowed me to serve as a youth leader for the college and represent my university at weekly briefings at the United Nations Headquarters on topics such as corporate social responsibility, environmental sustainability, human rights, poverty, and economic crisis.  </p>
+                </div>
+            </div>
+            <!-- Work at Felician University-->
+            <div class ="row">
+                <div class="col span-1-of-3">
+                    <img src="resources/img/Felician.jpg" class="felician"> 
+                </div>
+                <div class="col span-2-of-3">
+                    <h3>Felician University</h3>
+                    <h4>Research Assistant(Office of Institutional Research) <br>Systems Assistant(Student Information Systems)</h4>
+                    <h5>Lodi, NJ <br> July 2013-May 2015 <br> June 2011-Aug 2012  </h5>
+                    <p>My first real working experience,
+                       I was responsible for collecting, analyzing, interpreting, and visualizing data for 
+                       strategic planning at the institution. I also coordinated with other team members 
+                       and used tools such as Microsoft SQL Server Management Studio, 
+                       Microsoft Access, Microsoft Excel, and Crystal Reports to manage the primary reporting activities associated with student feedback. </p>
+                </div>
+            </div>
+        </section>
+        <!-- Beginning of Education Section- This section details my previous education-->
+        <!--H3 is used for school name, H4 is used for degree, H5 is used for location/Dates, p is used for description -->
+        <section class="Education">
+            <div class="row">
+                <h2>Education</h2>
+            </div>
+        <!-- Sophia University-->
+            <div class ="row">
+                <div class="col span-1-of-3">
+                    <img src="resources/img/Sophia.png" class="Sophia"> 
+                </div>
+        
+                <div class="col span-2-of-3">
+                    <h3>Sophia University</h3>
+                    <h4>M.S Green Science and Engineering Specialization: Machine Learning</h4>
+                    <h5>Tokyo, Japan Since Fall 2017</h5>
+                    <p>As a Masters Student at Sophia University my major is Green Science & Engineering with a focus on Machine Learning/Programming. 
+                       I am currently under the guidance of Yuichiro Miyamoto, PhD as part of my coursework in Information Science. 
+                       I am also fortunate to be provided free classes in Japanese Language from the institution where I concurrently study Sustainability, Machine Learning, and Japanese Language. 
+                </div>
+            </div>
+        <!-- United Nations University-->
+            <div class ="row">
+                <div class="col span-1-of-3">
+                    <img src="resources/img/UNU.png" class="UNU"> 
+                </div>
+                
+                <div class="col span-2-of-3">
+                    <h3>United Nations University</h3>
+                    <h4>UNU-IAS Joint Diploma in Sustainability Science</h4>
+                    <h5>Tokyo, Japan Since September 2018</h5>
+                    <p>As a Partnership with Sophia University, I am studying a joint diploma in Sustainability Science from United Nations University: 
+                        <br> <li>Intensive Core (IC) Courses - Global Change and Planetary Boundaries (GCPB)</li>
+                        <li>GIS and Remote Sensing</li>
+                    </p>
+                </div>
+            </div>
+        <!-- Felician University-->
+            <div class ="row">
+                <div class="col span-1-of-3">
+                    <img src="resources/img/Felician.jpg" class="felician"> 
+                </div>
+                
+                <div class="col span-2-of-3">
+                    <h3>Felician University</h3>
+                    <h4>Bachelor of Science in Business Administration, Minor: Global Peace and Justice Studies</h4>
+                    <h5>Lodi, NJ September 2010-June 2015</h5>
+                    <p> During my time at Felician University, I initially studied Music Composition and Classical guitar with around 2 years of music coursework. 
+                        Eventually I also found my passion for data analysis. I decided at that point to major in Business Administration where I focused on Data Analysis and business analytics. 
+                        I also became interested in social justice issues and took on a minor in Global Peace and Justice studies which allowed me the opportunity to perform coursework with the United Nations. 
+                        Felician University was a great time for me to experiment and discover myself which has set me up on this current path. 
+                    </p>
+                </div>
+            </div>
+        <!-- Kansai Gaidai University-->
+            <div class ="row">
+                <div class="col span-1-of-3">
+                    <img src="resources/img/kansaigaidai.jpg" class="kansai"> 
+                </div>
+                <div class="col span-2-of-3">
+                    <h3>Kansai Gaidai University</h3>
+                    <h4>Asian Studies Program- Business in Asia</h4>
+                    <h5>Osaka, Japan September 2012-June 2013</h5>
+                    <p> Study abroad at Kansai Gaidai University was one of the best times in my life. 
+                        I was able to make lasting friendships and connections with students from around the world and all walks of life. 
+                        I primarily studied Japanese Language as well as International business in my coursework. I was also a member of the Keion (Light Music Club) where I played many lives in western Japan as guitarist. 
+                    </p>
+                </div>
+            </div>
+        </section>
+    </body>
+
+        <!--Footer Section- contains standard contact info (e-mail), links to social media platforms, and copyright-->
+        <footer>
+            <div class="row">
+                <p>steimel65@gmail.com</p>
+            </div>
+            
+            <div class="row">
+                <ul class="social-links">
+                    <li><a href="https://twitter.com/WilliamSteimel"><ion-icon name="logo-twitter" class="ion-social-twitter"></ion-icon></a></li>
+                    <li><a href="https://www.linkedin.com/in/steimelw/"><ion-icon name="logo-linkedin" class="ion-social-linkedin"></ion-icon></a></li>
+                    <li><a href="https://steimel64.github.io/"><ion-icon name="logo-github" class="ion-social-github"></ion-icon></a></li>
+                </ul>
+            </div>
+            
+            <div class="row">
+                <p>Copyright &copy; William Steimel</p>
+            </div>
+        </footer>
+        <!--Custom Icons from ionicons- putting this script at the bottom of the page allows me to use their logos by specifying the name-->
+        <script src="https://unpkg.com/ionicons@4.5.1/dist/ionicons.js"></script>
+    
+ </html>
+

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Header Section -->
+    <head>
+
+        <!-- Outside CSS Frameworks Used- Normalize/Grid
+        Normalize- Helps with rendering of elements to be more consistent
+        Grid- Grid is useful as it uses a grid system to help align elements;
+        for example classes of "col span-1-of-2" would create grid elements of approximately half the page width- 
+        This was used solely for alignment although I am still a beginner at using it-->
+
+        <link rel="stylesheet" type="text/css" href="outsidesources/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="outsidesources/css/grid.css">
+        <!-- CSS Style Sheet- All Formatting for sections is defined here-->
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <!-- Fonts- I downloaded google fonts (Lato) for this website-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+        <!--Title -->
+        <title>William Steimel</title>
+    </head>
+
+    <!--Body Section Begin-->
+    <body>
+        <!-- Header- This section contains my profile picture, a navigation bar with hyperlinks to the other pages, as well as the title, and subtitle of the page
+        It is the same for every page with different images used-->
+        <header class="music-page">
+            <nav>
+                <div class="row">
+                    <img src="resources/img/profile.jpeg" class="profile-pic">
+                    <ul class="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="hireme.html">Hire me</a></li>
+                        <li><a href="resources/data/WILLIAM STEIMEL 2019 Resume.pdf">Resume Download</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="title-page">
+                <h1>Music</h1>
+                <p class="subheader">AILyra - Neural Networks for Symbolic Music Generation</p>
+            </div>
+        </header>
+    <!--Body Section Ends-->
+
+    <!--Music Section Begin- This Section Contains a summary about My Music Interests-->
+    <section class="Music">
+        <div class="row">
+            <div class = "col span-1-of-1">
+                <h2>Music</h2>
+                I have always been fascinated with the complexity of Music. As a teenager, I would spend hours on end
+                reading score books and analyzing the chord progressions and melodic patterns used by my favorite artists.  
+                I was curious to understand how these almost puzzle like patterns were used for creativity. This curiosity and drive to understand complexity 
+                not only extends to my interest in music but is perhaps what has also driven me to study Machine Learning as I am also passionate about technology. 
+                I am hoping to continue my Masters research in Applied Machine Learning and 
+                work on Music Generation applications and tools that can help musicians. 
+                As a guitarist or artist I feel there are still many untapped applications in which Machine Learning can be utilized to augment a players performance. 
+                <br> <br>
+                During live performances, I go by the stage name AILyra which is a combination of: 
+                <li>AI- Artificial Intelligence </li>
+                <li>Lyra - The star that represents the instrument of Orpheus from Greek mythology who was able to charm all living things. </li> 
+                <br>
+                Through the use of Neural Networks, I will learn to augment my own guitar performance so please wait for more details. 
+                AI generated music is still a new concept but I am sure it will find a way to charm new audiences around the world 
+                as we continue our transformation towards the digital era. 
+                At this intersection between Technology and Music is where I have always wanted to be.
+                Some of my sample Live performances, Photos, and Compositions can also be found here. Also AI generated music will be posted below in the future: 
+            </div>
+        </div>
+    </section>
+    <!-- Body Section End -->
+
+    <!--Section - Live Photos Begin- This Section Contains 8 photos from my live performances in 2 rows (4x2)- source from resources/img folder -->
+    <section class="Live-Photos">
+
+        <div class="row">
+            <h2>Live Photos!</h2>
+            <ul class="live-showcase">
+                <li>
+                    <figure class="live-photo">
+                        <img src="resources/img/music1.jpg" alt="live1">
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="live-photo">
+                        <img src="resources/img/music2.jpg" alt="live2">
+                    </figure>
+                </li>
+                
+                <li>
+                    <figure class="live-photo">
+                        <img src="resources/img/music3.jpg" alt="live3">
+                    </figure>
+                </li>
+                
+                <li>
+                    <figure class="live-photo">
+                        <img src="resources/img/music4.jpg" alt="live4">
+                    </figure>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <ul class="live-showcase">
+                <li>
+                    <figure class="live-photo">
+                        <img src="resources/img/music5.jpg" alt="live5">
+                    </figure>
+                </li>
+                
+                <li>
+                    <figure class="live-photo">
+                        <img src="resources/img/music7.jpg" alt="live6">
+                    </figure>
+                </li>
+                
+                <li>
+                    <figure class="live-photo">
+                        <img src="resources/img/music9.jpg" alt="live7">
+                    </figure>
+                </li>
+                
+                <li>
+                    <figure class="live-photo">
+                        <img src="resources/img/music11.jpg" alt="live8">
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--Section Live-photos End -->
+
+    <!--Section Lives Begin- This section contains two embed youtube videos from my Live Performances- These iframe codes for embed videos actually come from youtube directly-->
+    <section class="Lives">
+        <h2>Guitar Recordings</h2>
+        <div class="row">
+            <div class = "col span-1-of-2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DyAuD2UVw5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class = "col span-1-of-2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/k10vRm-TWc4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <!--Section Lives End-->
+
+    <!--Section Compositions Begin- This section contains two embed youtube videos from my compositions- These iframe codes for embed videos actually come from youtube directly-->
+    <section class="Compositions">
+        <h2>Compositions</h2>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uByHImog13Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col span-1-of-2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2JwSZhiYWjw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <!--Section Compositions End-->
+
+    <!-- Section Footer Begin- The Foot Contains my e-mail, Social media links, and a copyright notification-->
+    <footer>
+        <div class="row">
+            <p>steimel65@gmail.com</p>
+        </div>
+
+        <div class="row">
+            <ul class="social-links">
+                <li><a href="https://twitter.com/WilliamSteimel"><ion-icon name="logo-twitter" class="ion-social-twitter"></ion-icon></a></li>
+                <li><a href="https://www.linkedin.com/in/steimelw/"><ion-icon name="logo-linkedin" class="ion-social-linkedin"></ion-icon></a></li>
+                <li><a href="https://steimel64.github.io/"><ion-icon name="logo-github" class="ion-social-github"></ion-icon></a></li>
+            </ul>
+        </div>
+     
+        <div class="row">
+            <p>Copyright &copy; William Steimel</p>
+        </div>
+    </footer>
+    <!--Section Footer Ends -->
+
+                <!--Script/link for external Icons-->
+                <script src="https://unpkg.com/ionicons@4.5.1/dist/ionicons.js"></script>
+        </body>
+</html>

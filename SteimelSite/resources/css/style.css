@@ -1,0 +1,537 @@
+/* --------------------------- */
+/* BASIC SETUP Teal Theme color #0495a8c4*/ 
+/* --------------------------- */
+
+/* All Objects Formatting- Entire Website*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color:#555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility; 
+    overflow-x: hidden; 
+}
+
+/* Row Formatting- Entire Website*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto; 
+}
+
+/* Section Formatting- Entire Website*/
+section {
+    padding: 60px 0;
+}
+
+
+/* -------- HEADINGS ---------- */
+
+/* Heading1, Heading2, Heading3 Formatting- Entire Website*/
+h1,h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/* Heading1 Formatting- Entire Website*/
+h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:#fff;
+    font-size: 240%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    padding: 0px 80px;
+}
+
+/* Heading2 Formatting- Entire Website*/
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* Formatting after Heading2 including underline- Entire Website */ 
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #0495a8c4;
+    content: " ";
+    width:100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+/* Heading1 Formatting for title-page- MAIN TEXT ON EVERY PAGE*/
+.title-page h1{
+    text-align:center;
+    color:#fff;
+    font-size: 240%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    margin-top:200px;    
+}
+
+/* Text Below the Page Header */ 
+.title-page p{
+    color:rgba(226, 223, 221, 0.664);
+    text-align:center;
+    font-size:120%;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+
+}   
+
+/* Heading3 Formatting*/
+h3{
+    font-size:100%;
+    margin-bottom:3px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-weight: bold;
+    color:#04a0bbcb;
+}
+
+
+/* --------------------------- */
+/* TOP SECTION OF EACH PAGE FORMATTING */
+/* --------------------------- */
+
+/* Index Page Formatting Image/Gradient */
+.index-page{ 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/datascience.jpeg);
+    background-size: cover; 
+    background-position: center;
+    height: 100vh; 
+    background-attachment: fixed; 
+    margin-right:0;
+}
+
+/* About Page Formatting Image/Gradient */
+.about-page{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/about.jpeg);
+    background-size: cover; 
+    background-position: center;
+    height: 100vh; 
+    background-attachment: fixed; 
+    margin-right:0;
+}
+
+/* Hire me Formatting Image/Gradient */
+.hireme-page{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/forest.jpg);
+    background-size: cover; 
+    background-position: center;
+    height: 100vh; 
+    background-attachment: fixed; 
+    margin-right:0;
+}
+
+/* Research Page Formatting Image/Gradient */
+
+.research-page{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/library.jpg);
+    background-size: cover; 
+    background-position: center;
+    height: 100vh; 
+    background-attachment: fixed; 
+    margin-right:0;
+}
+
+/* Music page Formatting Image/Gradient */
+
+.music-page{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/PianoRoll.png);
+    background-size: cover; 
+    background-position: center;
+    height: 100vh; 
+    background-attachment: fixed; 
+    margin-right:0;
+}
+
+
+/* Formatting for navigation bar */ 
+.main-nav{
+    float:right;
+    list-style:none;
+    margin-top: 60px;
+    margin-right: 20px; 
+}
+
+/* Formatting for navigation list items */ 
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px; 
+}
+
+/* Formatting for a main nav list item-link and when it is visited */ 
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    
+}
+
+/* Formatting for a main nav list item-link and when the mouse is hovered on or clicked */ 
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #0495a8c4
+}
+
+/* Formatting for my profile pic which is at the top of every page*/ 
+
+.profile-pic{
+        height:150px;
+        width:auto;
+        float:left;
+        margin-top: 20px;
+        border-radius: 50%;
+        margin-left: 20px; 
+}
+
+/* -------- LINKS---------- */
+
+/* Formatting for a link when it is visited or inactive*/ 
+a:link,a:visited{
+    color: #0495a8c4;
+    text-decoration: none;
+    padding-bottom: 1px; 
+    border-bottom: 1px solid #0495a8c4;
+    transition: border-bottom 0.2s, color: 0.2s; 
+}
+
+/* Formatting for a link when it is hovered on*/ 
+a:hover,
+a:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
+
+}
+
+/* -------- BUTTONS ---------- */
+
+/* Formatting for the project_images which serve as links to my github projects*/ 
+
+/* hover/active status*/ 
+
+.project_img:hover,
+.project_img:active{
+    border: 5px ridge #1496d3c4;
+    
+}
+
+/* link/visited status */ 
+.project_img:link,
+.project_img:visited{
+    background-color: #0495a8c4;
+    border: 1px solid #0495a8c4;
+    color:#fff;
+    margin-right:15px;
+}
+
+
+/* --------------------------- */
+/* HOME PAGE - PROJECTS - PAGE */
+/* --------------------------- */
+
+/* Projects Formatting - Align Text Center  */ 
+
+
+.Projects{
+    text-align:center;
+}
+
+/* Projects Images - Resize so all images are the same size and center  */ 
+
+.Projects img {
+    width:  150px;
+    height: 150px;
+    vertical-align: middle;
+
+}
+
+/* Subtext - Center for alignment */ 
+
+.sub_text{
+    text-align:center;
+}
+
+/* paragraph text  - Align left cause it looks better than centered text*/ 
+
+.Projects p{
+    text-align:left;
+}
+
+/* --------------------------- */
+/* HOME PAGE - EXPERIENCE/EDUCATION- PAGE */
+/* --------------------------- */
+
+/* Formatting for all text objects in the Experience/Education sections. 
+Aligned to the left with extra padding on the bottom for aesthetic */ 
+
+.Experience h3,
+.Experience h4,
+.Experience h5,
+.Experience p,
+.Education h3,
+.Education h4,
+.Education h5,
+.Education p{
+    text-align: left;
+    padding-bottom: 3px;
+}
+
+/* Formatting for h4 header which is the Title, Degree name, purple is used cause it goes well with teal */ 
+
+.Experience h4,
+.Education h4{
+    color:rgba(66, 10, 156, 0.61)
+}
+
+/* Resize Image retain aspect ratio */ 
+
+.Experience img,
+.Education img{
+    display: block;
+    max-width:230px;
+    max-height:95px;
+    width: auto;
+    height: auto;
+    margin-left:120px;
+    
+}
+
+/* --------------------------- */
+/* ABOUTME-PAGE*/
+/* --------------------------- */
+
+
+/* aboutme-pic- formatting for my picture next to the about me summary - Was hard to center this */
+
+.aboutme-pic{
+    width:80%;
+    margin-top:80px;
+    margin-left:40px;
+}
+
+
+/* --------------------------- */
+/* RESEARCH-PAGE*/
+/* --------------------------- */
+
+/* Research-Experience- formatting for Nikkei Software Images*/
+
+.nikkei-1{
+    width: 15%;
+    height: auto;
+    margin-left:300px;
+}
+
+.nikkei-2{
+    width:25%;
+    height: auto;
+    margin-left: 50px;
+}
+
+/* interests-Formatting of the bullet points since it came out weird */ 
+.interests{
+    margin-left:20px;
+    padding-top:3px
+}
+
+/* --------------------------- */
+/* MUSIC-PAGE */
+/* --------------------------- */
+
+
+/* Live-Photos- Remove Padding*/
+
+.Live-Photos{
+    padding:0;
+
+}
+
+/* live-showcase- formatting live images section*/
+
+.live-showcase{
+    list-style:none;
+    width: 100%;
+}
+
+/* live-showcase- formatting for live images section list items*/
+
+.live-showcase li {
+    display:block;
+    float: left;
+    width: 25%;
+    
+}
+
+/* live-photo, Formatting for section - Make Background dark */
+
+.live-photo{
+    width:100%;
+    margin:0;
+    overflow: hidden;
+    background-color:#000;
+}
+
+/* live-photo, Formatting for each image */
+.live-photo img{
+    opacity: 0.7;
+    width:100%;
+    height: 340px;
+    transform: scale(.8);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+/* live-photo, Formatting for each image when hovered on (expand) */
+.live-photo img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/* --------------------------- */
+/* CONTACT-PAGE*/
+/* --------------------------- */
+
+/* Contact- Formatting of Contact Sections with links / e-mail (centered) */
+
+.Contact {
+    width: 60%;
+    margin: 0 auto;
+    text-align:center;
+    padding-bottom:0px;
+}
+
+/* submit_align - Alignment of the submit button to center- wasnt centered originally*/
+.submit_align{
+    text-align:center;
+} 
+
+/* Contact Form- Formatting */
+.section-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Formatting the text and email form buttons */
+input[type=text],
+input[type=email],
+textarea{
+    width:100%;
+    padding:7px;
+    border-radius:3px; 
+    border: 1px solid #ccc;
+    
+}
+
+/* Formatting the text area */
+textarea{
+    height: 100px; 
+}
+
+/* Formatting the margins around checkbox form button */
+input[type=checkbox]{
+    margin:10px 5px 10px 0;
+}
+
+/* Formatting the submit button */
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight:300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s, color 0.2s;
+    background-color: #1496d3c4;
+    border: 1px solid #1496d3c4;
+    color:#fff;
+    margin-right:15px;
+}
+
+/* Formatting the submit button on hover for cool effect */
+
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #065c96
+}
+
+/* --------------------------- */
+/* FOOTER-SECTION*/
+/* --------------------------- */
+
+/* Footer-Formatting */
+footer{
+    background-color: #333;
+    font-size:80%;
+    color: #fff;
+}
+
+/* Footer-Formatting for list*/
+footer ul{
+    text-align: center;
+    margin: 5px;
+}
+
+/* Footer-Formatting for social links like twitter*/
+.social-links li{
+    list-style:none;
+    display: inline; 
+    font-size:200%;
+    margin:5px;
+}
+
+/* Footer-Formatting for paragraph text*/
+footer p{
+    text-align: center;
+    margin: 5px;
+}
+
+/* Footer-Formatting- Social Links*/
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border:0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+/* Footer-Formatting- Cool Transition Effect for social media images*/
+
+.ion-social-linkedin,
+.ion-social-twitter,
+.ion-social-github{
+    transition: color 0.2s;
+    
+}
+/* Footer-Formatting- Cool hover effect that changes color of social media image to brand*/
+.ion-social-linkedin:hover{
+    color: #007bb5;
+}
+
+.ion-social-twitter:hover{
+    color: #00aced;
+}
+
+.ion-social-github:hover{
+    color: #000;
+}
+
+/* The End */ 

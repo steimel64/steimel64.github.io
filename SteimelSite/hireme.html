@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- HEADER SECTION -->
+    <head>
+        <!-- Outside CSS Frameworks Used- Normalize/Grid
+        Normalize- Helps with rendering of elements to be more consistent
+        Grid- Grid is useful as it uses a grid system to help align elements;
+        for example classes of "col span-1-of-2" would create grid elements of approximately half the page width- 
+        This was used solely for alignment although I am still a beginner at using it-->
+        <link rel="stylesheet" type="text/css" href="outsidesources/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="outsidesources/css/grid.css">
+        <!-- CSS Style Sheet- All Formatting for sections is defined here-->
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <!-- Fonts- I downloaded google fonts (Lato) for this website-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+        <title>William Steimel</title>
+    </head>
+    
+    <body>
+        <!-- This section is the same format as the index and every other page, It contains the Background picture, profile picture, and navigation bar to other pages-->
+        <header class="hireme-page">
+            <nav>
+                <div class="row">
+                    <img src="resources/img/profile.jpeg" class="profile-pic">
+                    <ul class="main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="hireme.html">Hire me</a></li>
+                        <li><a href="resources/data/WILLIAM STEIMEL 2019 Resume.pdf">Resume Download</a></li>
+                    </ul>
+                </div>
+            </nav>
+        <!-- The Title and subheader overlayed on the background is located in the title-page section-->
+            <div class="title-page">
+                <h1>Contact</h1>
+                <p class="subheader">Lets get in touch!</p>
+            </div>
+        </header>
+        <!-- Email Contact into-->
+        <section class="Contact">
+            <div class="row">
+                <h2>Contact</h2>
+            </div>
+            <div class="row">                
+                <br>
+                <p>steimel65@gmail.com</p>
+            </div>                                     
+        <!-- Social Media Links Again -->
+            <div class="row">
+                <ul class="social-links">
+                    <li><a href="https://twitter.com/WilliamSteimel"><ion-icon name="logo-twitter" class="ion-social-twitter"></ion-icon></a></li>
+                    <li><a href="https://www.linkedin.com/in/steimelw/"><ion-icon name="logo-linkedin" class="ion-social-linkedin"></ion-icon></a></li>
+                    <li><a href="https://steimel64.github.io/"><ion-icon name="logo-github" class="ion-social-github"></ion-icon></a></li>
+                </ul>
+            </div>
+            <p>Can also reach out to me at the below form if you have any questions about my portfolio or even if you want to hire me ;)</p>
+        </section>
+        <!-- Contact Form with Name (Text), Email(Email), Inquiry(Dropdown), Colab(Checkbox), Message(Text), and Submit Buttons (Button) -->
+        <section class="section-form">
+            <div class="row">
+                <form method="post" action="#" class='contact-form'>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="email">Email</label>
+                            </div>
+                            
+                            <div class="col span-2-of-3">
+                                <input type="email" name="email" id="email" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Inquiry Type</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <select name="inquiry" id="inquiry">
+                                    <option value="music" selected>Music</option>
+                                    <option value="sustainability">Sustainability</option>
+                                    <option value="work">Work</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Colab?</label>
+                            </div>
+                            
+                            <div class="col span-2-of-3">
+                                <input type="checkbox" name="collab-check" id="collab" checked> Lets Collab?
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>Message</label>
+                            </div>
+                            
+                            <div class="col span-2-of-3">
+                                <textarea name="message" placeholder="Your message"></textarea>                            
+                            </div> 
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            
+                            <div class="submit_align">
+                                <div class="col span-2-of-3">
+                                    <input type="submit" value="Send">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </body>
+    <!--Footer Section- contains standard contact info (e-mail), links to social media platforms, and copyright-->
+    <footer>
+        <div class="row">
+            <p>steimel65@gmail.com</p>
+        </div>
+        
+        <div class="row">
+            <ul class="social-links">
+                <li><a href="https://twitter.com/WilliamSteimel"><ion-icon name="logo-twitter" class="ion-social-twitter"></ion-icon></a></li>
+                <li><a href="https://www.linkedin.com/in/steimelw/"><ion-icon name="logo-linkedin" class="ion-social-linkedin"></ion-icon></a></li>
+                <li><a href="https://steimel64.github.io/"><ion-icon name="logo-github" class="ion-social-github"></ion-icon></a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <p>Copyright &copy; William Steimel</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@4.5.1/dist/ionicons.js"></script>
+</html>

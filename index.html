@@ -7,10 +7,15 @@
         for example classes of "col span-1-of-2" would create grid elements of approximately half the page width- 
         This was used solely for alignment although I am still a beginner at using it-->
     <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="SteimelSite/outsidesources/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="SteimelSite/outsidesources/css/grid.css">
         <!-- CSS Style Sheet- All Formatting for sections is defined here-->
         <link rel="stylesheet" type="text/css" href="SteimelSite/resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="SteimelSite/resources/css/queries.css">
+
+
         <!-- Fonts- I downloaded google fonts (Lato) for this website-->
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
         <!--Title -->
@@ -46,7 +51,7 @@
         <section class="Projects">
             <div class="row">
                 <h2>My Projects</h2>
-                Some sample Data Science projects that I have worked on in the past year.
+                <h4>Some sample Data Science projects that I have worked on in the past year.</h4>
             </div>
             <!-- grid.css is useful as I can set a span-1-of-3 for each project meaning each project will take up an equal 33.3% of the page-->
             <!-- The code below contains three projects I worked on recently, Two methods for linking are used--->
@@ -68,7 +73,7 @@
                 <div class="col span-1-of-3">
                     <br>
                     <a href="https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Terrorism/Terrorism.ipynb"><img src="SteimelSite/resources/img/secretarygeneral.png" class="project_img"></a>
-                    <a href="https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Terrorism/Terrorism.ipynb"><h3>Data Visualization/Exploration Project: Global Terrorism (Python)</h3></a>
+                    <a href="https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/Terrorism/Terrorism.ipynb"><h3>EDA Project: Global Terrorism (Python)</h3></a>
                     <p>The dataset comes from the Global Terrorism Database which details 
                     more than 170,000 terrorist attacks worldwide between 1970 and 2016.
                     This project seeks to explore, visualize, and analyze terrorism Trends 

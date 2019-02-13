@@ -1,0 +1,122 @@
+
+
+
+/* Big tablet to 1200 px (widths smaller than the 1140 px ) */
+@media only screen and (max-width: 1200px){
+
+.Experience img,
+.Education img{
+    max-width:180px;
+    max-height:95px;
+    margin-left:100px;
+}
+
+}
+
+/* Small Tablets to big tablets: from 768 to 1023px */
+@media only screen and (max-width: 1023px){
+.row {
+    max-width:95%;
+}
+
+.Experience img,
+.Education img{
+    max-width:180px;
+    max-height:95px;
+    margin-left:50px;
+}
+
+
+.profile-pic{
+    height:0px;
+}
+
+h1,h2,h3,h4,h5,p{
+    font-size: 80%;
+}
+
+.Education li{
+    font-size: 80%;
+}
+
+.title-page p, sub-header{
+    font-size: 80%;
+}
+
+
+li{
+    font-size: 80%; 
+    margin:0px;
+    padding:0px;
+}
+
+}
+
+
+/* Small phones to Small Tablets: from 481 to 767px */
+@media only screen and (max-width: 767px){
+    h1,h2,h3,h4,h5, p{
+        font-size: 65%;
+    }
+
+    .Education li{
+        font-size: 65%;
+    }
+
+    .title-page h1, sub-header{
+        font-size: 80%;
+    }
+
+    .main-nav li{
+        font-size: 63%; 
+        display: inline-block;
+        margin-left: 5px; 
+        padding:5px;
+        float: left;
+        text-align: center;
+
+    }
+
+
+    .Experience img,
+    .Education img{
+        max-width:110px;
+        max-height:95px;
+        margin-left:30px;
+    }
+
+    .profile-pic{
+        height:0px;
+}
+
+}
+
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px){
+    .row {
+        max-width:90%;
+    }
+ 
+    .main-nav li{
+        font-size: 50%; 
+        display: inline-block;
+        margin-left: 5px; 
+        padding:3px;
+        float: left;
+        text-align: center;
+    }
+
+    h1,h2,h3,h4,h5, p{
+        text-align:center;
+    }
+
+    .Experience img,
+    .Education img{
+        max-width:110px;
+        max-height:95px;
+        padding:10px;
+        margin-left:0px;
+    }
+
+}

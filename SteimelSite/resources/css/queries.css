@@ -63,6 +63,14 @@ li{
         font-size: 65%;
     }
 
+    .Music li{
+        font-size: 65%;
+    }
+
+    .Research-Experience li{
+        font-size: 65%;
+    }
+
     .title-page h1, sub-header{
         font-size: 80%;
     }
@@ -99,7 +107,7 @@ li{
     }
  
     .main-nav li{
-        font-size: 50%; 
+        font-size: 40%; 
         display: inline-block;
         margin-left: 5px; 
         padding:3px;

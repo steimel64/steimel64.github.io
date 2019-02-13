@@ -39,6 +39,10 @@ h1,h2,h3,h4,h5,p{
     font-size: 80%;
 }
 
+.Music li{
+    font-size: 80%;
+}
+
 .title-page p, sub-header{
     font-size: 80%;
 }
@@ -109,8 +113,8 @@ li{
     .main-nav li{
         font-size: 40%; 
         display: inline-block;
-        margin-left: 5px; 
-        padding:3px;
+        margin-left: 3px; 
+        padding:2px;
         float: left;
         text-align: center;
     }

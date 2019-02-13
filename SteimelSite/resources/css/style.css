@@ -417,7 +417,7 @@ Aligned to the left with extra padding on the bottom for aesthetic */
     width: 60%;
     margin: 0 auto;
     text-align:center;
-    padding-bottom:0px;
+    padding-bottom:20px;
 }
 
 /* submit_align - Alignment of the submit button to center- wasnt centered originally*/

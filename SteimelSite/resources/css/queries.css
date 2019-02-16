@@ -11,6 +11,12 @@
     margin-left:100px;
 }
 
+.main-nav li{
+    font-size: 90%; 
+
+}
+
+
 }
 
 /* Small Tablets to big tablets: from 768 to 1023px */
@@ -18,6 +24,22 @@
 .row {
     max-width:95%;
 }
+
+.main-nav{
+    width:100%;
+    text-align:center;
+}
+
+
+.main-nav li{
+    font-size: 95%; 
+    display: inline-block;
+    margin-left: 5px; 
+    padding:5px;
+    text-align: center;
+
+}
+
 
 .Experience img,
 .Education img{
@@ -54,13 +76,27 @@ li{
     padding:0px;
 }
 
+.live-photo img{
+    height: 250px;
+}
+
+
 }
 
 
 /* Small phones to Small Tablets: from 481 to 767px */
 @media only screen and (max-width: 767px){
+    .row {
+        max-width:95%;
+    }
+
     h1,h2,h3,h4,h5, p{
         font-size: 65%;
+    }
+
+    .main-nav{
+        width:100%;
+        text-align:center;
     }
 
     .Education li{
@@ -76,17 +112,15 @@ li{
     }
 
     .title-page h1, sub-header{
-        font-size: 80%;
+        font-size: 90%;
     }
 
     .main-nav li{
-        font-size: 63%; 
+        font-size: 60%; 
         display: inline-block;
-        margin-left: 5px; 
-        padding:5px;
-        float: left;
+        margin-left: 8px; 
+        padding:3px;
         text-align: center;
-
     }
 
 
@@ -109,26 +143,66 @@ li{
     .row {
         max-width:90%;
     }
+
+
+
+    .Experience h3,
+    .Experience h4,
+    .Experience h5,
+    .Education h3,
+    .Education h4,
+    .Education h5{
+        text-align:center;
+    }
+    
+
+    .main-nav{
+        width:95%;
+        text-align:center;
+    }
  
     .main-nav li{
-        font-size: 40%; 
+        font-size: 60%; 
         display: inline-block;
-        margin-left: 3px; 
-        padding:2px;
-        float: left;
+        margin-left: 2px; 
+        padding:3px;
         text-align: center;
     }
 
-    h1,h2,h3,h4,h5, p{
+    h1,h2,h3,h4,h5{
+        text-align:center;
+    }
+
+
+    .Experience{
         text-align:center;
     }
 
     .Experience img,
     .Education img{
-        max-width:110px;
-        max-height:95px;
-        padding:10px;
-        margin-left:0px;
+     height:0px;
     }
+
+    .nikkei-1{
+        width: 30%;
+        height: auto;
+        margin-left:15%;
+    }
+    
+    .nikkei-2{
+        width:30%;
+        height: auto;
+        margin-left: 5%;
+    }
+
+    .live-photo img{
+        height: 200px;
+    }
+
+
+
+    
+
+
 
 }

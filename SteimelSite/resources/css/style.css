@@ -24,6 +24,7 @@ html {
 .row {
     max-width: 1140px;
     margin: 0 auto; 
+    max-width:95%;
 }
 
 /* Section Formatting- Entire Website*/
@@ -341,13 +342,13 @@ Aligned to the left with extra padding on the bottom for aesthetic */
 .nikkei-1{
     width: 15%;
     height: auto;
-    margin-left:300px;
+    margin-left:30%;
 }
 
 .nikkei-2{
     width:25%;
     height: auto;
-    margin-left: 50px;
+    margin-left: 5%;
 }
 
 /* interests-Formatting of the bullet points since it came out weird */ 
@@ -418,7 +419,7 @@ Aligned to the left with extra padding on the bottom for aesthetic */
     width: 60%;
     margin: 0 auto;
     text-align:center;
-    padding-bottom:20px;
+    padding-bottom:70px;
 }
 
 /* submit_align - Alignment of the submit button to center- wasnt centered originally*/

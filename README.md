@@ -111,6 +111,19 @@ As a Masters Student at Sophia University my major is Green Science & Engineerin
 
 [ **Data Visualization** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/DataVisualization.pdf)  - 08/01/2018
 
+[ **Experience at UNU** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/UNU.pdf) - 10/14/2018
+
+[ **Feature Engineering** ](https://github.com/steimel64/steimel64.github.io/blob/master/ResearchReviews/FeatureEngineering.pdf) - 10/18/2018
+
+[ **Data Pre-Processing** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/DataPreproc.pdf) - 11/08/2018
+
+[ **Model Ensembling** ](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/Ensembling.pdf) - 
+11/22/2018
+
+[ **Text Mining and Pre-processing**](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/TextMining.pdf) - 
+12/13/2018
+
+[ **Model Evaluation and Model Selection in Machine Learning**](https://github.com/steimel64/steimel64.github.io/blob/master/Tutorials/ModelEvaluation.pdf) - 1/16/2019
 
 
 ## Masters Research Reviews/Summary
@@ -127,6 +140,9 @@ Below are some sample research reviews which were presented to all members of my
 
 [ **How to use t-SNE effectively- Martin Wattenberg** ](https://github.com/steimel64/steimel64.github.io/blob/master/ResearchReviews/t-SNE.pdf) - 07/16/2018
 
+[ **A Tutorial on Principal Components Analysis- Johnathon Shlens** ](https://github.com/steimel64/steimel64.github.io/blob/master/ResearchReviews/PCA.pdf) - 11/29/2018
+
+[ **I know you'll be back: Interpretable New User Clustering and Churn Prediction on a Mobile Social Application- Carl Yang, Xiaolin Shi, Jie Luo, Jiawei Han** ](https://github.com/steimel64/steimel64.github.io/blob/master/ResearchReviews/SnapChurn.pdf) - 01/16/2019
 
 
 ## Sustainability Research Papers 
@@ -142,6 +158,15 @@ This research paper was created in collaboration with Lucas Roth Below for a Pro
 [ **New York City’s Environmental Policy Implementation - from the perspective of Technology and Innovation - Report** ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/New_York_Env_Policy_Technology.pdf) 
 
   [ **New York City’s Environmental Policy Implementation - from the perspective of Technology and Innovation- PPT** ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/NYC_Env_Policy_Review.pdf) 
+  
+[ **Adaptation in the Philippines for Resilient Agriculture - Report for UNU** ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/Adaptation%20in%20the%20Philippines%20for%20Resilient%20Agriculture.pdf) 
+  
+[ **Tokyo Carbon Policy - Report** ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/TokyoCarbon.pdf) 
+
+[ **Machine Learning for Biodiversity - PPT** ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/BiodiversityML.pdf) 
+
+[ **Global Environment Outlook - Case Study on Mekong River Basin * ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/William_Steimel_Env_Outlook_Final.pdf) 
+
 
 ## Data Science Related MOOC's 
 Listed below are various MOOC's (online courses) I completed in my free time to develop skills in Data Science. 

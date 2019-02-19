@@ -165,7 +165,7 @@ This research paper was created in collaboration with Lucas Roth Below for a Pro
 
 [ **Machine Learning for Biodiversity - PPT** ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/BiodiversityML.pdf) 
 
-[ **Global Environment Outlook - Case Study on Mekong River Basin * ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/William_Steimel_Env_Outlook_Final.pdf) 
+[ **Global Environment Outlook - Case Study on Mekong River Basin** ](https://github.com/steimel64/steimel64.github.io/blob/master/Research%20Papers/William_Steimel_Env_Outlook_Final.pdf) 
 
 
 ## Data Science Related MOOC's 

@@ -90,8 +90,8 @@ h2:after{
     font-size:120%;
     word-spacing: 1px;
     letter-spacing: 1px;
-
 }   
+
 
 /* Heading3 Formatting*/
 h3{
@@ -349,6 +349,12 @@ Aligned to the left with extra padding on the bottom for aesthetic */
     width:25%;
     height: auto;
     margin-left: 5%;
+}
+
+.AIProg1{
+    width: 15%;
+    height: auto;
+    margin-left:42%;
 }
 
 /* interests-Formatting of the bullet points since it came out weird */ 

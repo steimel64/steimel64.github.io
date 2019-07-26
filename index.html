@@ -49,6 +49,30 @@
         </header>
         <!--Projects Section - Code for some of my Machine Learning Projects-->
         <section class="Projects">
+                <div class="row">
+                    <h2>Masters Thesis</h2>
+                </div>
+                <!-- grid.css is useful as I can set a span-1-of-3 for each project meaning each project will take up an equal 33.3% of the page-->
+                <!-- The code below contains three projects I worked on recently, Two methods for linking are used--->
+                <!-- The picture and the H3 header serve as hyperlinks to the projects while <p> contains the general description-->
+                <div class="row">
+                    <div class="col span-1-of-1">
+                        <br>
+                        <a href="SteimelSite/resources/data/William_Steimel_Masters_Thesis.pdf"><img src="SteimelSite/resources/img/thesis.png" class="project_img"></a>
+                        <a href="SteimelSite/resources/data/William_Steimel_Masters_Thesis.pdf">
+                            <h3>A Time Independent Gradient Boosting Machine for Rent Prediction in Tokyo 23 Special Wards with Geospatial and Environmental Features</h3></a>
+                            <p>Rent prediction and real estate value estimation has long had applications in economics, urban development, and public policy. 
+                                Recently machine learning techniques have been applied to real estate value estimation in the private sector and competitive machine learning competitions with good results. 
+                                However, there are some challenges with modeling real estate prices due to the amount of factors that contribute to the overall market which can vary based on geographic region. 
+                                Tokyo, like any other major city in the world has common but also unique factors that contribute to rent pricing and valuation. 
+                                This paper introduces an approach that uses Gradient Boosting Decision Tree (GBDT) algorithm LightGBM (LGBM) to predict rent in Tokyo's 23 special wards based on real estate, geospatial, and environmental features. 
+                                This approach achieves performance gains through the combination of environmental data sources and feature engineering techniques in comparison to a baseline model that only uses rental features. 
+                                The proposed model achieves price predictions within 5.01 % and 11,200 yen which is an improvement on the baseline model's error of 5.91 % and 12,200 yen. 
+                                This paper also explores the factors that contribute to rent value in Tokyo’s 23 wards based on LightGBM's optimization from an environmental, geospatial, and feature engineering perspective.</p>
+                    </div>
+                </div>
+            </section>
+        <section class="Projects">
             <div class="row">
                 <h2>My Projects</h2>
                 <h4>Some sample Data Science projects that I have worked on in the past year.</h4>
@@ -56,22 +80,7 @@
             <!-- grid.css is useful as I can set a span-1-of-3 for each project meaning each project will take up an equal 33.3% of the page-->
             <!-- The code below contains three projects I worked on recently, Two methods for linking are used--->
             <!-- The picture and the H3 header serve as hyperlinks to the projects while <p> contains the general description-->
-            <div class="row">
-                <div class="col span-1-of-1">
-                    <br>
-                    <a href="SteimelSite/resources/data/William_Steimel_Masters_Thesis.pdf"><img src="SteimelSite/resources/img/Hiragana.png" class="project_img"></a>
-                    <a href="SteimelSite/resources/data/William_Steimel_Masters_Thesis.pdf">
-                        <h3>Masters Thesis- A Time Independent Gradient Boosting Machine for Rent Prediction in Tokyo 23 Special Wards with Geospatial and Environmental Features</h3></a>
-                        <p>Rent prediction and real estate value estimation has long had applications in economics, urban development, and public policy. 
-                            Recently machine learning techniques have been applied to real estate value estimation in the private sector and competitive machine learning competitions with good results. 
-                            However, there are some challenges with modeling real estate prices due to the amount of factors that contribute to the overall market which can vary based on geographic region. 
-                            Tokyo, like any other major city in the world has common but also unique factors that contribute to rent pricing and valuation. 
-                            This paper introduces an approach that uses Gradient Boosting Decision Tree (GBDT) algorithm LightGBM (LGBM) to predict rent in Tokyo’s 23 special wards based on real estate, geospatial, and environmental features. 
-                            This approach achieves performance gains through the combination of environmental data sources and feature engineering techniques in comparison to a baseline model that only uses rental features. 
-                            The proposed model achieves price predictions within 5.01 % and 11,200 yen which is an improvement on the baseline model’s error of 5.91 % and 12,200 yen. 
-                            This paper also explores the factors that contribute to rent value in Tokyo’s 23 wards based on LightGBM’s optimization from an environmental, geospatial, and feature engineering perspective.</p>
-                </div>
-                </div>
+                <div class="row">
                 <div class="col span-1-of-3">
                     <br>
                     <a href=https://github.com/steimel64/steimel64.github.io/blob/master/Notebooks/HiraganaRecognition.ipynb><img src="SteimelSite/resources/img/Hiragana.png" class="project_img"></a>
@@ -222,7 +231,8 @@
                     <h5>Tokyo, Japan Since September 2018</h5>
                     <br>
                     <p>As a Partnership with Sophia University, I am studying a joint diploma in Sustainability Science from United Nations University: 
-                        <br> <li>Intensive Core (IC) Courses - Global Change and Planetary Boundaries</li>
+                        <br> 
+                        <li>Intensive Core (IC) Courses - Global Change and Planetary Boundaries</li>
                         <li>GIS and Remote Sensing</li>
                     </p>
                 </div>
@@ -279,13 +289,11 @@
                     <li><a href="https://steimel64.github.io/"><ion-icon name="logo-github" class="ion-social-github"></ion-icon></a></li>
                 </ul>
             </div>
-            
             <div class="row">
                 <p>Copyright &copy; William Steimel</p>
             </div>
         </footer>
         <!--Custom Icons from ionicons- putting this script at the bottom of the page allows me to use their logos by specifying the name-->
         <script src="https://unpkg.com/ionicons@4.5.1/dist/ionicons.js"></script>
-    
  </html>
 

@@ -261,8 +261,8 @@ a:active{
 /* Projects Images - Resize so all images are the same size and center  */ 
 
 .Projects img {
-    width:  150px;
-    height: 150px;
+    width:  200px;
+    height: 170px;
     vertical-align: middle;
 
 }
@@ -498,6 +498,8 @@ footer ul{
     margin: 5px;
 }
 
+
+/* Footer-Formatting for list*/
 /* Footer-Formatting for social links like twitter*/
 .social-links li{
     list-style:none;

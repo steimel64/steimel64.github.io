@@ -1,7 +1,7 @@
 // Contact page oscilloscope: a phosphor trace on a 10 × 8 graticule.
 // Pointer position sets frequency and amplitude; every keystroke in the form
 // injects a harmonic, so writing a message literally changes the signal.
-import { onFrame, whileVisible, reducedMotion, lerp, pointer } from '../core/env.js';
+import { onFrame, whileVisible, reducedMotion, lerp, pointer, trackBox } from '../core/env.js';
 
 export function initScope({ wrap, canvas, readout }) {
   const ctx = canvas.getContext('2d');
@@ -19,42 +19,57 @@ export function initScope({ wrap, canvas, readout }) {
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.fillStyle = '#050a0b';
     ctx.fillRect(0, 0, w, h);
+    paintGraticule();
   };
-  resize();
-  new ResizeObserver(resize).observe(canvas);
 
   const state = { freq: 3, amp: 0.32, targetFreq: 3, targetAmp: 0.32, harmonics: [], phase: 0 };
 
-  const grid = () => {
-    ctx.strokeStyle = 'rgba(52, 242, 223, 0.12)';
-    ctx.lineWidth = 1;
-    ctx.beginPath();
+  // The graticule never changes, so it is drawn once per size into an
+  // offscreen canvas and copied onto each frame.
+  const graticule = document.createElement('canvas');
+  const paintGraticule = () => {
+    graticule.width = canvas.width;
+    graticule.height = canvas.height;
+    const g = graticule.getContext('2d');
+    g.setTransform(dpr, 0, 0, dpr, 0, 0);
+    g.strokeStyle = 'rgba(52, 242, 223, 0.12)';
+    g.lineWidth = 1;
+    g.beginPath();
     for (let i = 1; i < 10; i++) {
       const x = Math.round((w / 10) * i) + 0.5;
-      ctx.moveTo(x, 0);
-      ctx.lineTo(x, h);
+      g.moveTo(x, 0);
+      g.lineTo(x, h);
     }
     for (let j = 1; j < 8; j++) {
       const y = Math.round((h / 8) * j) + 0.5;
-      ctx.moveTo(0, y);
-      ctx.lineTo(w, y);
+      g.moveTo(0, y);
+      g.lineTo(w, y);
     }
-    ctx.stroke();
+    g.stroke();
     // Minor ticks on the centre axes.
-    ctx.strokeStyle = 'rgba(52, 242, 223, 0.28)';
-    ctx.beginPath();
+    g.strokeStyle = 'rgba(52, 242, 223, 0.28)';
+    g.beginPath();
     for (let i = 0; i < 50; i++) {
       const x = (w / 50) * i;
-      ctx.moveTo(x, h / 2 - 3);
-      ctx.lineTo(x, h / 2 + 3);
+      g.moveTo(x, h / 2 - 3);
+      g.lineTo(x, h / 2 + 3);
     }
     for (let j = 0; j < 40; j++) {
       const y = (h / 40) * j;
-      ctx.moveTo(w / 2 - 3, y);
-      ctx.lineTo(w / 2 + 3, y);
+      g.moveTo(w / 2 - 3, y);
+      g.lineTo(w / 2 + 3, y);
     }
-    ctx.stroke();
+    g.stroke();
   };
+  const grid = () => {
+    ctx.save();
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.drawImage(graticule, 0, 0);
+    ctx.restore();
+  };
+
+  resize();
+  new ResizeObserver(resize).observe(canvas);
 
   const sample = (x, t) => {
     let v = Math.sin(x * state.freq * Math.PI * 2 + state.phase) * state.amp;
@@ -106,11 +121,12 @@ export function initScope({ wrap, canvas, readout }) {
     visible = v;
   });
   let lastReadout = 0;
+  const geometry = trackBox(canvas);
 
   onFrame((now) => {
     if (!visible) return;
     const t = now / 1000;
-    const box = canvas.getBoundingClientRect();
+    const box = geometry; // cached, no layout read
     if (pointer.active && pointer.y > box.top - 200 && pointer.y < box.bottom + 400) {
       state.targetFreq = 1 + ((pointer.x - box.left) / box.width) * 5;
       state.targetAmp = 0.12 + Math.min(1, Math.abs(pointer.y - (box.top + box.height / 2)) / (box.height * 2)) * 0.28;

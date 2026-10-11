@@ -1,6 +1,7 @@
-// Marquee that drifts at a steady speed. No skew or scroll-driven speed changes,
-// so the text never wobbles.
-import { onFrame, reducedMotion, whileVisible } from './env.js';
+// Marquee that drifts at a steady speed. The motion itself is a CSS animation
+// on the compositor, so it stays smooth even while the main thread is busy;
+// this script only sizes its duration to the text and pauses it off screen.
+import { reducedMotion, whileVisible } from './env.js';
 
 export function initTickers(root = document) {
   root.querySelectorAll('[data-ticker]').forEach((ticker) => {
@@ -15,22 +16,14 @@ export function initTickers(root = document) {
     }
     if (reducedMotion()) return;
 
-    const base = Number(ticker.dataset.ticker) || 0.6;
-    let x = 0;
-    let visible = true;
-    let w = group.offsetWidth;
-    new ResizeObserver(() => {
-      w = group.offsetWidth;
-    }).observe(group);
-    whileVisible(ticker, (v) => {
-      visible = v;
-    });
-    onFrame(() => {
-      if (!visible || !w) return;
-      x -= base;
-      if (x <= -w) x += w;
-      if (x > 0) x -= w;
-      track.style.transform = `translate3d(${x}px,0,0)`;
-    });
+    // data-ticker is the speed in pixels per 60 Hz frame.
+    const speed = (Number(ticker.dataset.ticker) || 0.6) * 60;
+    const size = () => {
+      const width = group.offsetWidth;
+      if (width) track.style.setProperty('--ticker-duration', `${(width / speed).toFixed(2)}s`);
+    };
+    size();
+    new ResizeObserver(size).observe(group);
+    whileVisible(ticker, (visible) => ticker.classList.toggle('is-paused', !visible));
   });
 }

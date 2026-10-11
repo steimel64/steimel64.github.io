@@ -2,7 +2,7 @@
 // Pointer bends the image like a lens, fast moves split the RGB channels,
 // and the frame tears in short glitch bursts. Falls back to the plain video.
 import { createQuad } from './gl.js';
-import { onFrame, pointer, lerp, whileVisible } from '../core/env.js';
+import { onFrame, pointer, lerp, whileVisible, trackBox, quality } from '../core/env.js';
 
 const FRAG = `
 precision highp float;
@@ -58,16 +58,17 @@ void main() {
   // Channels only split when something happens: pointer speed, the lens or a glitch.
   float split = 0.0004 + uVel * 0.005 + lens * 0.0015 + uGlitch * 0.006;
   vec2 off = (dir / aspect) * split + vec2(split * 0.6, 0.0);
-  float cr = texture2D(uTex, tuv + off).r;
-  float cg = texture2D(uTex, tuv).g;
-  float cb = texture2D(uTex, tuv - off).b;
-  vec3 col = vec3(cr, cg, cb);
-
-  // Unsharp mask against a 4-tap blur to pull edge detail out of the soft source.
-  vec2 px = 1.0 / uVid;
+  // Five texture reads per pixel. The centre read serves both the green channel
+  // and the sharpening; two bilinear reads on the half-texel diagonals average
+  // the neighbourhood that four point reads used to.
   vec3 c0 = texture2D(uTex, tuv).rgb;
-  vec3 blur = (texture2D(uTex, tuv + vec2(px.x, 0.0)).rgb + texture2D(uTex, tuv - vec2(px.x, 0.0)).rgb
-             + texture2D(uTex, tuv + vec2(0.0, px.y)).rgb + texture2D(uTex, tuv - vec2(0.0, px.y)).rgb) * 0.25;
+  float cr = texture2D(uTex, tuv + off).r;
+  float cb = texture2D(uTex, tuv - off).b;
+  vec3 col = vec3(cr, c0.g, cb);
+
+  // Unsharp mask to pull edge detail out of the soft source.
+  vec2 px = 1.0 / uVid;
+  vec3 blur = (texture2D(uTex, tuv + px * 0.5).rgb + texture2D(uTex, tuv - px * 0.5).rgb) * 0.5;
   col += (c0 - blur) * 0.85;
 
   // Grade toward the film's night palette: deeper blacks, violet shadows.
@@ -115,6 +116,9 @@ export function initHeroFilm({ section, canvas, video }) {
   gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE, new Uint8Array([10, 8, 18, 255]));
   quad.set1i('uTex', 0);
 
+  // Video frames go through texImage2D on purpose: measured in Chrome, it takes
+  // the fast GPU copy path, while texSubImage2D from a video is several times slower.
+  const upload = (source) => gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, source);
   let hasFrame = false;
   let fresh = false;
   let introStart = 0;
@@ -127,7 +131,7 @@ export function initHeroFilm({ section, canvas, video }) {
   still.onload = () => {
     if (hasFrame) return;
     gl.bindTexture(gl.TEXTURE_2D, tex);
-    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, still);
+    upload(still);
     size = { w: still.naturalWidth, h: still.naturalHeight };
     hasFrame = true;
     introStart = performance.now();
@@ -155,10 +159,13 @@ export function initHeroFilm({ section, canvas, video }) {
   let glitch = 0.6;
   let nextGlitch = performance.now() + 2600;
   const t0 = performance.now();
+  const box = trackBox(canvas);
+  let tick = 0;
 
   onFrame((now) => {
     if (!visible) return;
-    const rect = canvas.getBoundingClientRect();
+    if (++tick % quality.stride) return; // the slowest machines draw every other frame
+    const rect = box; // cached geometry, no layout read
     if (pointer.active) {
       mouse.x = lerp(mouse.x, (pointer.x - rect.left) / rect.width, 0.08);
       mouse.y = lerp(mouse.y, 1 - (pointer.y - rect.top) / rect.height, 0.08);
@@ -172,7 +179,7 @@ export function initHeroFilm({ section, canvas, video }) {
     glitch *= 0.93;
 
     if (video.readyState >= 2 && !video.paused && (fresh || !('requestVideoFrameCallback' in video))) {
-      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, video);
+      upload(video);
       size = { w: video.videoWidth, h: video.videoHeight };
       fresh = false;
       if (!hasFrame) {

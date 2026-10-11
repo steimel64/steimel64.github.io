@@ -39,6 +39,16 @@ export function scramble(el, nextText, { duration = 900, glyphClass = 'scramble_
     queue.push({ from: from[i] || '', to: to[i] || '', start, end, glyph: '' });
   }
 
+  // One span per character, created once and updated in place each frame
+  // (only the cells whose character changes are touched).
+  const cells = queue.map((q) => {
+    const cell = document.createElement('span');
+    cell.textContent = q.from;
+    return cell;
+  });
+  state.vis.replaceChildren(...cells);
+  const isGlyph = cells.map(() => false);
+
   return new Promise((resolve) => {
     const t0 = performance.now();
     const step = (now) => {
@@ -48,28 +58,23 @@ export function scramble(el, nextText, { duration = 900, glyphClass = 'scramble_
         resolve();
         return;
       }
-      const frag = document.createDocumentFragment();
-      let plain = '';
-      const flush = () => {
-        if (plain) {
-          frag.append(plain);
-          plain = '';
-        }
-      };
-      for (const q of queue) {
-        if (t >= q.end) plain += q.to;
+      queue.forEach((q, i) => {
+        let ch = q.from;
+        let glyph = false;
+        if (t >= q.end) ch = q.to;
         else if (t >= q.start) {
           if (!q.glyph || Math.random() < 0.3)
             q.glyph = q.to === ' ' ? ' ' : GLYPHS[Math.floor(Math.random() * GLYPHS.length)];
-          flush();
-          const s = document.createElement('span');
-          s.className = glyphClass;
-          s.textContent = q.glyph;
-          frag.append(s);
-        } else plain += q.from;
-      }
-      flush();
-      state.vis.replaceChildren(frag);
+          ch = q.glyph;
+          glyph = true;
+        }
+        const cell = cells[i];
+        if (cell.textContent !== ch) cell.textContent = ch;
+        if (isGlyph[i] !== glyph) {
+          cell.className = glyph ? glyphClass : '';
+          isGlyph[i] = glyph;
+        }
+      });
       state.raf = requestAnimationFrame(step);
     };
     state.raf = requestAnimationFrame(step);

@@ -1898,26 +1898,6 @@ button {
   font-size: 13px;
   fill: var(--signal);
 }
-.hd-tag {
-  font-family: var(--font-data);
-  font-size: 10.5px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-.hd-tag--auto {
-  fill: var(--tail);
-}
-.hd-tag--me {
-  fill: var(--torii);
-}
-.hd-note {
-  font-family: var(--font-body);
-  font-size: 14px;
-  fill: var(--haze);
-}
-.hd-note--me {
-  fill: var(--fog);
-}
 .hd-edge {
   fill: none;
   stroke-width: 1.6;

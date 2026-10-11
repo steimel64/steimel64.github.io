@@ -1804,10 +1804,10 @@ button {
 }
 
 /* --- Harness diagrams (Studio and Label) ---
-   Loop diagrams drawn in SVG: William's brief feeds an automatic inner loop,
-   every result stops at his review (sealed), then moves on or goes back
-   round. Wide screens get a horizontal layout, phones a vertical one. The
-   pulses are dash offsets on short paths, paused for reduced motion. */
+   Inline SVG loops, generated with the pages. Red with the seal is William
+   (every creative decision); cyan is the harness (repetitive work that loops
+   until it holds up). Screens from 1000px get a horizontal layout, smaller
+   ones a vertical one. Pulses are dash offsets on short paths, paused for reduced motion. */
 .harness {
   margin: 0;
   display: grid;
@@ -1819,20 +1819,17 @@ button {
   height: auto;
   overflow: visible;
 }
-.hd--tall,
-.hd--tall-release {
+.hd--tall {
   max-width: 26rem;
   margin-inline: auto;
 }
-@media (min-width: 900px) {
-  .hd--tall,
-  .hd--tall-release {
+@media (min-width: 1000px) {
+  .hd--tall {
     display: none;
   }
 }
-@media (max-width: 899px) {
-  .hd--wide,
-  .hd--wide-release {
+@media (max-width: 999px) {
+  .hd--wide {
     display: none;
   }
 }
@@ -1892,6 +1889,34 @@ button {
   font-size: 14px;
   text-anchor: middle;
   fill: var(--haze);
+}
+.hd-diamond {
+  fill: var(--signal);
+}
+.hd-num {
+  font-family: var(--font-data);
+  font-size: 13px;
+  fill: var(--signal);
+}
+.hd-tag {
+  font-family: var(--font-data);
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.hd-tag--auto {
+  fill: var(--tail);
+}
+.hd-tag--me {
+  fill: var(--torii);
+}
+.hd-note {
+  font-family: var(--font-body);
+  font-size: 14px;
+  fill: var(--haze);
+}
+.hd-note--me {
+  fill: var(--fog);
 }
 .hd-edge {
   fill: none;
@@ -1965,7 +1990,12 @@ button {
 .hd-pulse--me {
   stroke: var(--torii);
   animation-duration: 5s;
-  animation-delay: 1.5s;
+  animation-delay: var(--delay, 1.5s);
+}
+.hd-pulse--spine {
+  stroke: var(--fog);
+  stroke-dasharray: 1.2 98.8;
+  animation-duration: 9s;
 }
 .hd-pulse--link {
   stroke: var(--signal);
@@ -1997,16 +2027,15 @@ button {
 .harness__key::before {
   content: '';
   flex: none;
-  width: 1.4rem;
-  height: 0.8rem;
+  width: 0.95rem;
+  height: 0.95rem;
+  border-radius: 50%;
 }
 .harness__key--me::before {
-  background: rgb(255 64 48 / 0.15) url('../favicon.svg') center / 0.75rem no-repeat;
-  border: 1px solid rgb(255 64 48 / 0.75);
+  background: url('../favicon.svg') center / contain no-repeat;
 }
 .harness__key--auto::before {
-  border: 1px dashed var(--tail);
-  border-radius: 999px;
+  border: 1.5px solid var(--tail);
 }
 
 /* --- Label: LUNA.EXE --- */

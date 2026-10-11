@@ -1,6 +1,6 @@
 // AI Film Studio: custom film player with chapter scrubber, the 3D frame
 // corridor and the scroll-drawn process.
-import { onFrame, clamp, reducedMotion, whileVisible, timecode } from '../core/env.js';
+import { onFrame, clamp, reducedMotion, whileVisible, timecode, trackBox, changed } from '../core/env.js';
 import { autoplayClips } from '../core/media.js';
 import { initCorridor } from '../fx/corridor.js';
 
@@ -167,9 +167,12 @@ function pipeline() {
     },
     '100px',
   );
+  const box = trackBox(el);
+  const seen = {};
   onFrame(() => {
     if (!visible) return;
-    const r = el.getBoundingClientRect();
+    if (!changed(seen)) return;
+    const r = box;
     const p = clamp((innerHeight * 0.8 - r.top) / (r.height + innerHeight * 0.2), 0, 1);
     line.style.setProperty('--p', p.toFixed(3));
     steps.forEach((s, i) => s.classList.toggle('is-active', p >= (i / steps.length) * 0.98 + 0.02));

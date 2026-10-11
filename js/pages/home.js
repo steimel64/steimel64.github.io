@@ -2,7 +2,7 @@
 // (the Engineering panel runs the trust-run graphic; the studio clip plays only
 // on screen) and the Background timeline, whose line draws in as it scrolls past.
 import { initHeroFilm } from '../gl/hero-film.js';
-import { onFrame, reducedMotion, whileVisible, clamp } from '../core/env.js';
+import { onFrame, reducedMotion, whileVisible, clamp, trackBox, changed } from '../core/env.js';
 import { autoplayClips } from '../core/media.js';
 import { initTrustRun } from '../fx/trust-run.js';
 
@@ -72,9 +72,10 @@ function statement() {
     '200px',
   );
   let last = -1;
+  const r = trackBox(el);
+  const seen = {};
   onFrame(() => {
-    if (!visible) return;
-    const r = el.getBoundingClientRect();
+    if (!visible || !changed(seen)) return;
     const p = clamp((innerHeight * 0.8 - r.top) / (r.height + innerHeight * 0.35), 0, 1);
     const n = Math.round(p * words.length);
     if (n === last) return;
@@ -103,12 +104,14 @@ function log() {
     },
     '100px',
   );
+  const r = trackBox(el);
+  const marks = entries.map((e) => ({ e, box: trackBox(e) }));
+  const seen = {};
   onFrame(() => {
-    if (!visible) return;
-    const r = el.getBoundingClientRect();
+    if (!visible || !changed(seen)) return;
     const mark = innerHeight * 0.7;
     line.style.setProperty('--p', clamp((mark - r.top) / r.height, 0, 1).toFixed(3));
-    entries.forEach((e) => e.classList.toggle('is-active', e.getBoundingClientRect().top < mark));
+    marks.forEach(({ e, box }) => e.classList.toggle('is-active', box.top < mark));
   });
 }
 

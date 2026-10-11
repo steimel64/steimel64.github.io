@@ -329,19 +329,24 @@ export function initTrustRun({ wrap, canvas, stages, hud }) {
     // Agents: short streaks, additive
     ctx.globalCompositeOperation = 'lighter';
     ctx.lineCap = 'round';
-    const rgb = mix(COL.agent, COL.team, hp);
+    // One colour per frame; each agent's fade goes through globalAlpha, which
+    // is far cheaper than parsing a new rgba() string per agent.
+    const rgb = `rgb(${mix(COL.agent, COL.team, hp)})`;
+    ctx.strokeStyle = rgb;
+    ctx.fillStyle = rgb;
+    ctx.lineWidth = 1.4;
     for (const a of agents) {
       if (a.life <= 0.01) continue;
       const o = a.life * alpha;
-      ctx.strokeStyle = `rgba(${rgb}, ${0.55 * o})`;
-      ctx.lineWidth = 1.4;
+      ctx.globalAlpha = 0.55 * o;
       ctx.beginPath();
       ctx.moveTo(a.px, a.py);
       ctx.lineTo(a.x, a.y);
       ctx.stroke();
-      ctx.fillStyle = `rgba(${rgb}, ${0.95 * o})`;
+      ctx.globalAlpha = 0.95 * o;
       ctx.fillRect(a.x - 1.2, a.y - 1.2, 2.4, 2.4);
     }
+    ctx.globalAlpha = 1;
     ctx.globalCompositeOperation = 'source-over';
 
     // The seal leads the swarm, a little above it; at hand-off it stamps the

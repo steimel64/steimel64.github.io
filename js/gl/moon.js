@@ -8,11 +8,11 @@
 // read instead of ~70 noise evaluations per pixel: same picture, a fraction of
 // the GPU time. If the bake cannot run, the surface is computed live.
 import { createQuad, createTarget } from './gl.js';
-import { onFrame, pointer, lerp, whileVisible } from '../core/env.js';
+import { onFrame, pointer, lerp, whileVisible, trackBox, quality } from '../core/env.js';
 
 const ALBEDO_MIN = -0.4; // albedo range stored in the 8-bit map
 const ALBEDO_RANGE = 1.8;
-const BAKE_STRIPS = 8;
+const BAKE_STRIPS = 16; // small slices keep each frame of the bake short
 
 const SURFACE = `
 float h3(vec3 p) { p = fract(p * 0.3183099 + 0.1); p *= 17.0; return fract(p.x * p.y * p.z * (p.x + p.y + p.z)); }
@@ -218,11 +218,14 @@ export function initMoon({ section, canvas }) {
     '0px',
   );
   const mouse = { x: 0.3, y: 0.7 };
+  const box = trackBox(canvas);
+  let tick = 0;
   let pulse = 0;
 
   onFrame((now) => {
     if (!visible || !ready) return;
-    const rect = canvas.getBoundingClientRect();
+    if (++tick % quality.stride) return; // the slowest machines draw every other frame
+    const rect = box; // cached geometry, no layout read
     if (pointer.active) {
       mouse.x = lerp(mouse.x, (pointer.x - rect.left) / rect.width, 0.05);
       mouse.y = lerp(mouse.y, 1 - (pointer.y - rect.top) / rect.height, 0.05);

@@ -2,7 +2,7 @@
 // space; scrolling flies the camera forward through them. Frames fade in from
 // the dark and fade out as they pass the lens. Off with reduced motion, where
 // the same frames sit in a plain grid.
-import { onFrame, clamp, reducedMotion, whileVisible } from '../core/env.js';
+import { onFrame, clamp, reducedMotion, whileVisible, trackBox, changed } from '../core/env.js';
 
 export function initCorridor(section) {
   if (reducedMotion()) return;
@@ -29,10 +29,13 @@ export function initCorridor(section) {
     '100px',
   );
   let lastTc = '';
+  const box = trackBox(section);
+  const seen = {};
 
   onFrame(() => {
     if (!visible) return;
-    const r = section.getBoundingClientRect();
+    if (!changed(seen)) return; // nothing moved: the frames are already in place
+    const r = box;
     const p = clamp(-r.top / Math.max(1, r.height - innerHeight), 0, 1);
     const cam = p * travel;
     const narrow = innerWidth < 760;

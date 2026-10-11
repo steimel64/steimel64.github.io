@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>AI Film Studio | William Steimel</title>
+    <meta
+      name="description"
+      content="William Steimel’s AI film studio: watch The Courier, a 101-second AI action short, and see how it was made."
+    />
+    <meta name="theme-color" content="#07060d" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="canonical" href="https://steimel64.github.io/artistry.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="William Steimel" />
+    <meta property="og:title" content="AI Film Studio | William Steimel" />
+    <meta
+      property="og:description"
+      content="William Steimel’s AI film studio: watch The Courier, a 101-second AI action short, and see how it was made."
+    />
+    <meta property="og:url" content="https://steimel64.github.io/artistry.html" />
+    <meta property="og:image" content="https://steimel64.github.io/media/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,100..900&family=Instrument+Sans:wdth,wght@75..100,400..700&family=Martian+Mono:wdth,wght@75..112.5,300..600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&amp;display=swap&amp;text=%E3%82%AA%E3%82%B8%E3%82%B9%E3%82%BF%E3%83%99%E3%83%AB%E3%83%AC%E3%83%BC%E4%B8%8A%E4%BA%AC%E4%BD%9C%E4%BF%A1%E5%83%8F%E5%8D%83%E5%93%81%E5%A2%83%E5%AE%9A%E5%B1%85%E5%B1%8B%E6%8A%80%E6%96%99%E6%98%A0%E6%9C%AC%E6%9D%B1%E6%A5%BD%E6%AC%A0%E6%AD%B4%E7%89%A9%E7%95%AA%E7%B5%8C%E8%A1%93%E8%A8%AD%E8%AA%9E%E8%B3%87%E8%B6%8A%E9%80%9A%E9%83%BD%E9%9B%86%E9%9F%B3%E9%A6%96%E9%AB%98%E9%AD%82%E9%B3%A5"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="modulepreload" href="js/main.js" />
+    <link rel="preload" as="image" href="media/stills/overclock.webp" />
+    <script>
+      document.documentElement.classList.add('js');
+      // Arriving from another page of the site: start covered so the transition can sweep away.
+      try {
+        if (sessionStorage.getItem('steimel:transit')) {
+          sessionStorage.removeItem('steimel:transit');
+          if (!matchMedia('(prefers-reduced-motion: reduce)').matches)
+            document.documentElement.classList.add('is-arriving');
+        }
+      } catch (e) {}
+      // Opened straight from disk: browsers block the site's module scripts on file://, so say how to preview properly.
+      if (location.protocol === 'file:')
+        document.addEventListener('DOMContentLoaded', function () {
+          var n = document.createElement('div');
+          n.className = 'file-notice';
+          n.setAttribute('role', 'status');
+          n.innerHTML =
+            '<strong>Most animations are off in this preview.</strong> Browsers block the site’s scripts when a page is opened as a file. Run <code>tools/preview.command</code> (Mac) or <code>tools/preview.bat</code> (Windows), or open the published site.';
+          document.body.appendChild(n);
+        });
+    </script>
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="transit" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="William Steimel, home"
+        ><img class="brand__mark" src="seal.svg" alt="" width="36" height="36" /><span class="brand__name"
+          >Steimel<span class="brand__role">Forward Deployed Engineer and AI Artist</span></span
+        ></a
+      >
+      <div class="site-header__end">
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul role="list">
+            <li>
+              <a href="engineering.html" data-scramble-hover
+                ><span class="label">Engineering</span><span class="site-nav__jp" aria-hidden="true">技術</span></a
+              >
+            </li>
+            <li>
+              <a href="artistry.html" aria-current="page" data-scramble-hover
+                ><span class="label">Studio</span><span class="site-nav__jp" aria-hidden="true">スタジオ</span></a
+              >
+            </li>
+            <li>
+              <a href="label.html" data-scramble-hover
+                ><span class="label">Label</span><span class="site-nav__jp" aria-hidden="true">レーベル</span></a
+              >
+            </li>
+            <li>
+              <a href="contact.html" data-scramble-hover
+                ><span class="label">Contact</span><span class="site-nav__jp" aria-hidden="true">通信</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="menu-toggle__label">Menu</span>
+        </button>
+      </div>
+    </header>
+    <div class="progress" aria-hidden="true"></div>
+    <div class="viewfinder" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="hud tc" aria-hidden="true">
+      <span class="hud__clock" data-hud-clock>TYO --:--:-- JST</span><span class="hud__section" data-hud-section></span
+      ><span class="hud__rec" data-hud-tc>TC 00:00:00:00</span>
+    </div>
+    <div class="grain" aria-hidden="true"></div>
+    <main id="main" data-page="artistry" data-ambient="loud">
+      <section class="page-hero" data-hud="AI Film Studio">
+        <div class="wrap">
+          <span class="page-hero__jp jp" lang="ja" aria-hidden="true">作品集</span>
+          <h1 class="page-hero__title" data-scramble>AI Film Studio</h1>
+          <p class="page-hero__lede">
+            The Courier is the studio’s latest short. Watch it, fly through its frames, then see how it was made.
+          </p>
+        </div>
+      </section>
+
+      <section id="film" class="section" data-hud="The Courier">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 class="section-head__title" data-scramble>The Courier</h2>
+            <p class="section-head__lede">A 101-second action short. Turn the sound on.</p>
+          </div>
+          <div class="player" data-player>
+            <div class="player__frame">
+              <video preload="metadata" playsinline poster="media/stills/overclock.webp">
+                <source src="media/film/the-courier.mp4" type="video/mp4" />
+                <source src="media/film/the-courier.webm" type="video/webm" />
+                Your browser can’t play this video.
+                <a href="media/film/the-courier.mp4">Download The Courier (MP4, 14 MB)</a>.
+              </video>
+              <button class="player__big" type="button" aria-label="Play The Courier with sound">
+                <span class="player__big-inner"
+                  ><span class="player__big-ring"
+                    ><svg viewBox="0 0 16 16" aria-hidden="true">
+                      <path d="M4 2.5v11l9-5.5z" fill="currentColor" /></svg></span
+                  ><span class="player__big-label">Play film</span><span class="tc">1:41 with sound</span></span
+                >
+              </button>
+            </div>
+            <div class="player__bar">
+              <button class="player__btn" type="button" data-act="play" aria-label="Play"></button>
+              <div class="scrub">
+                <div class="scrub__chapters" aria-hidden="true"></div>
+                <input
+                  id="film-seek"
+                  type="range"
+                  min="0"
+                  max="101.56"
+                  step="0.01"
+                  value="0"
+                  aria-label="Seek through the film"
+                />
+              </div>
+              <span class="player__time tc" aria-hidden="true">00:00:00:00</span>
+              <button class="player__btn" type="button" data-act="mute" aria-label="Mute"></button>
+              <button class="player__btn" type="button" data-act="full" aria-label="Full screen"></button>
+            </div>
+          </div>
+          <div class="chapters">
+            <button class="chapter" type="button" data-chapter data-start="0" data-end="29.8" style="--c: #ff2bd1">
+              <span class="chapter__media"
+                ><img
+                  src="media/stills/shield-640.webp"
+                  width="640"
+                  height="360"
+                  alt=""
+                  loading="lazy"
+                  decoding="async" /><video muted loop playsinline preload="none" aria-hidden="true">
+                  <source src="media/film/clip-rooftop.mp4" type="video/mp4" />
+                  <source src="media/film/clip-rooftop.webm" type="video/webm" /></video
+              ></span>
+              <span class="chapter__body">
+                <span class="chapter__row"><span class="tc">Chapter 1</span><span class="tc">0:00</span></span>
+                <span class="chapter__name">Rooftop</span>
+                <span class="chapter__jp" lang="ja">屋上</span>
+                <span class="chapter__note">A billboard face, an armoured enforcer, and the first overload.</span>
+              </span></button
+            ><button class="chapter" type="button" data-chapter data-start="29.8" data-end="58.8" style="--c: #ff4030">
+              <span class="chapter__media"
+                ><img
+                  src="media/stills/torii-stairs-640.webp"
+                  width="640"
+                  height="360"
+                  alt=""
+                  loading="lazy"
+                  decoding="async" /><video muted loop playsinline preload="none" aria-hidden="true">
+                  <source src="media/film/clip-shrine.mp4" type="video/mp4" />
+                  <source src="media/film/clip-shrine.webm" type="video/webm" /></video
+              ></span>
+              <span class="chapter__body">
+                <span class="chapter__row"><span class="tc">Chapter 2</span><span class="tc">0:29</span></span>
+                <span class="chapter__name">Thousand gates</span>
+                <span class="chapter__jp" lang="ja">千本鳥居</span>
+                <span class="chapter__note">Oni ambush on the shrine steps. Close quarters, red lacquer, rain.</span>
+              </span></button
+            ><button class="chapter" type="button" data-chapter data-start="58.8" data-end="91.6" style="--c: #34f2df">
+              <span class="chapter__media"
+                ><img
+                  src="media/stills/lean-640.webp"
+                  width="640"
+                  height="360"
+                  alt=""
+                  loading="lazy"
+                  decoding="async" /><video muted loop playsinline preload="none" aria-hidden="true">
+                  <source src="media/film/clip-highway.mp4" type="video/mp4" />
+                  <source src="media/film/clip-highway.webm" type="video/webm" /></video
+              ></span>
+              <span class="chapter__body">
+                <span class="chapter__row"><span class="tc">Chapter 3</span><span class="tc">0:58</span></span>
+                <span class="chapter__name">Highway</span>
+                <span class="chapter__jp" lang="ja">首都高</span>
+                <span class="chapter__note">A chase on the expressway with light-cycle riders and a glaive.</span>
+              </span></button
+            ><button
+              class="chapter"
+              type="button"
+              data-chapter
+              data-start="91.6"
+              data-end="101.56"
+              style="--c: #ffb23e"
+            >
+              <span class="chapter__media"
+                ><img
+                  src="media/stills/courier-sheet-640.webp"
+                  width="640"
+                  height="360"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+              /></span>
+              <span class="chapter__body">
+                <span class="chapter__row"><span class="tc">Chapter 4</span><span class="tc">1:31</span></span>
+                <span class="chapter__name">Character file</span>
+                <span class="chapter__jp" lang="ja">設定資料</span>
+                <span class="chapter__note">The design sheet the whole film was generated from.</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="corridor" data-corridor data-hud="Inside the frame" aria-label="Frames from The Courier">
+        <div class="corridor__pin">
+          <div class="corridor__title wrap">
+            <h2 class="section-head__title">Inside the frame</h2>
+            <p class="section-head__lede">
+              Stills from The Courier, made with frontier AI video models.<span class="corridor__hint">
+                Scroll to fly through the cut.</span
+              >
+            </p>
+          </div>
+          <div class="corridor__space">
+            <figure class="corridor__frame" data-x="-18" data-y="-8" data-tc="00:00:15:00  Overclock">
+              <img
+                src="media/stills/overclock-640.webp"
+                srcset="media/stills/overclock-640.webp 800w, media/stills/overclock.webp 1600w"
+                sizes="(max-width: 760px) 74vw, 44vw"
+                width="1600"
+                height="900"
+                alt="Close-up of the Courier, eyepatch HUD reading 9001"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="corridor__frame" data-x="20" data-y="9" data-tc="00:00:30:12  The climb">
+              <img
+                src="media/stills/torii-stairs-640.webp"
+                srcset="media/stills/torii-stairs-640.webp 800w, media/stills/torii-stairs.webp 1600w"
+                sizes="(max-width: 760px) 74vw, 44vw"
+                width="1600"
+                height="900"
+                alt="The Courier climbing steps through vermilion torii gates"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="corridor__frame" data-x="-22" data-y="10" data-tc="00:01:03:12  Pursuit">
+              <img
+                src="media/stills/pursuit-640.webp"
+                srcset="media/stills/pursuit-640.webp 800w, media/stills/pursuit.webp 1600w"
+                sizes="(max-width: 760px) 74vw, 44vw"
+                width="1600"
+                height="900"
+                alt="Motorcycle chase on a neon expressway"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="corridor__frame" data-x="18" data-y="-12" data-tc="00:00:36:00  Oni clash">
+              <img
+                src="media/stills/oni-clash-640.webp"
+                srcset="media/stills/oni-clash-640.webp 800w, media/stills/oni-clash.webp 1600w"
+                sizes="(max-width: 760px) 74vw, 44vw"
+                width="1600"
+                height="900"
+                alt="Oni warriors attacking on a wet shrine path"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="corridor__frame" data-x="-8" data-y="-14" data-tc="00:00:20:00  Shield dome">
+              <img
+                src="media/stills/shield-640.webp"
+                srcset="media/stills/shield-640.webp 800w, media/stills/shield.webp 1600w"
+                sizes="(max-width: 760px) 74vw, 44vw"
+                width="1600"
+                height="900"
+                alt="An amber energy dome on the rooftop"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="corridor__frame" data-x="24" data-y="2" data-tc="00:00:55:00  A thousand gates">
+              <img
+                src="media/stills/thousand-gates-640.webp"
+                srcset="media/stills/thousand-gates-640.webp 800w, media/stills/thousand-gates.webp 1600w"
+                sizes="(max-width: 760px) 74vw, 44vw"
+                width="1600"
+                height="900"
+                alt="Walking away through a tunnel of torii gates"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="corridor__frame" data-x="-20" data-y="4" data-tc="00:01:19:00  Redline">
+              <img
+                src="media/stills/redline-640.webp"
+                srcset="media/stills/redline-640.webp 800w, media/stills/redline.webp 1600w"
+                sizes="(max-width: 760px) 74vw, 44vw"
+                width="1600"
+                height="900"
+                alt="A rider swings a glowing red blade"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="corridor__frame" data-x="0" data-y="0" data-tc="00:01:35:00  Character file">
+              <img
+                src="media/stills/courier-sheet-640.webp"
+                srcset="media/stills/courier-sheet-640.webp 800w, media/stills/courier-sheet.webp 1600w"
+                sizes="(max-width: 760px) 74vw, 44vw"
+                width="1600"
+                height="900"
+                alt="The Courier character sheet"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </div>
+          <span class="corridor__tc tc" data-corridor-tc aria-hidden="true"></span>
+        </div>
+      </section>
+
+      <section class="section" data-hud="Process">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 class="section-head__title" data-scramble>How a film gets made</h2>
+            <p class="section-head__lede">
+              Generative tools are fast, but a film still needs direction. This is the order I work in.
+            </p>
+          </div>
+          <ol class="pipeline bare" data-pipeline>
+            <span class="pipeline__line" aria-hidden="true"><i></i></span>
+            <li class="step">
+              <span class="step__n">01</span>
+              <h3 class="step__title">Write</h3>
+              <p class="step__body">
+                The plan for the film: story beats, a shot list and storyboards, so every shot has a job before anything
+                is generated.
+              </p>
+              <div class="step__tools"><span class="tag">Shot list</span><span class="tag">Storyboards</span></div>
+            </li>
+            <li class="step">
+              <span class="step__n">02</span>
+              <h3 class="step__title">Design</h3>
+              <p class="step__body">
+                Character sheets, scenes, lighting and camera angles, locked in as references so every shot stays
+                consistent.
+              </p>
+              <div class="step__tools"><span class="tag">Image models</span></div>
+            </li>
+            <li class="step">
+              <span class="step__n">03</span>
+              <h3 class="step__title">Block</h3>
+              <p class="step__body">
+                Each scene laid out and rendered in 3D, so space, positions and camera paths are worked out before
+                generation.
+              </p>
+              <div class="step__tools"><span class="tag">3D rendering</span></div>
+            </li>
+            <li class="step">
+              <span class="step__n">04</span>
+              <h3 class="step__title">Generate</h3>
+              <p class="step__body">
+                3D models go through video models, shot by shot, take after take, until each shot holds up.
+              </p>
+              <div class="step__tools"><span class="tag">Video models</span></div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <a class="next-page" href="label.html">
+        <div class="wrap">
+          <span class="next-page__label">Next</span><span class="next-page__title">AI Record Label</span>
+        </div>
+        <span class="next-page__bar" aria-hidden="true"></span>
+      </a>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-cta">
+          <p class="footer-cta__line">
+            <a href="contact.html"
+              ><span class="kinetic">Let’s build</span><br /><span class="kinetic">a world</span></a
+            >
+          </p>
+        </div>
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h2>Pages</h2>
+            <ul role="list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="engineering.html">Engineering</a></li>
+              <li><a href="artistry.html">Studio</a></li>
+              <li><a href="label.html">Label</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h2>Elsewhere</h2>
+            <ul role="list">
+              <li><a href="https://x.com/WilliamSteimel" data-link="x">X / Twitter</a></li>
+              <li><a href="https://www.linkedin.com/in/steimelw" data-link="linkedin">LinkedIn</a></li>
+              <li><a href="https://github.com/steimel64" data-link="github">GitHub</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h2>Write to me</h2>
+            <div class="copy-field">
+              <span class="copy-field__value" data-email>steimel65 [at] gmail.com</span
+              ><button class="copy-btn" type="button" data-copy="email">Copy email</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-base">
+          <span>© 2026 William Steimel</span><span class="tc">Tokyo 35.6895° N 139.6917° E</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

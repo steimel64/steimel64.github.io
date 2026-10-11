@@ -726,16 +726,15 @@ button {
 }
 
 /* Scroll reveals start from a visible resting state */
+/* Only transform and opacity animate, so reveals run on the compositor. */
 [data-reveal] {
   transition:
     transform 1s var(--ease-out),
-    opacity 1s var(--ease-out),
-    filter 1s var(--ease-out);
+    opacity 1s var(--ease-out);
 }
 [data-reveal='pending'] {
   transform: translateY(2.2rem);
   opacity: 0.45;
-  filter: saturate(0.3);
 }
 
 /* Marquee ticker */
@@ -752,11 +751,17 @@ button {
   width: max-content;
   will-change: transform;
 }
-/* Without JavaScript the ticker still loops, just at a fixed speed. */
-html:not(.js-ready) .ticker__track {
-  animation: ticker-fallback 38s linear infinite;
+/* The marquee is a compositor animation: the track holds two identical groups,
+   so sliding it by half its width loops seamlessly. ticker.js sets the duration
+   from the text width so the speed stays the same at any size; without
+   JavaScript it still loops at a fixed duration. */
+.ticker__track {
+  animation: ticker-loop var(--ticker-duration, 38s) linear infinite;
 }
-@keyframes ticker-fallback {
+.ticker.is-paused .ticker__track {
+  animation-play-state: paused;
+}
+@keyframes ticker-loop {
   to {
     transform: translateX(-50%);
   }
@@ -2870,15 +2875,16 @@ main,
 [data-scramble].is-booting {
   animation: boot-clip 0.85s var(--ease-in-out) both;
 }
+/* The scanline is a full-height layer with the line on its bottom edge and a
+   soft trail above it; it slides with transform, so it never triggers layout. */
 [data-scramble].is-booting::after {
   content: '';
   position: absolute;
   left: -1%;
   right: -1%;
   top: 0;
-  height: 2px;
-  background: var(--tail);
-  box-shadow: 0 0 16px 2px var(--tail);
+  height: 100%;
+  background: linear-gradient(to top, var(--tail) 0 2px, rgb(52 242 223 / 0.28) 2px, transparent 18px);
   pointer-events: none;
   animation: boot-scan 0.85s var(--ease-in-out) forwards;
 }
@@ -2892,14 +2898,14 @@ main,
 }
 @keyframes boot-scan {
   0% {
-    top: 0;
+    transform: translateY(-100%);
     opacity: 1;
   }
   85% {
     opacity: 1;
   }
   100% {
-    top: 100%;
+    transform: translateY(0);
     opacity: 0;
   }
 }
@@ -3025,7 +3031,10 @@ main,
     stroke-width: 1.6;
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
-    filter: drop-shadow(0 0 4px rgb(255 178 62 / 0.7));
+  }
+  .traces .traces__glow {
+    stroke-width: 6;
+    opacity: 0.28;
   }
   .traces.is-drawn path {
     stroke-dashoffset: 0;
@@ -3054,7 +3063,6 @@ main,
   [data-reveal='pending'] {
     transform: none;
     opacity: 1;
-    filter: none;
   }
   .grain {
     display: none;

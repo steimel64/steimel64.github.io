@@ -64,14 +64,17 @@ export function initAmbient() {
   const count = Math.round((loud ? 36 : 14) * (mobile ? 0.4 : 1));
   const spawn = (d, initial) => {
     const edge = Math.random() * GUTTER; // distance from the outer edge
+    const c = colors[Math.floor(Math.random() * colors.length)];
+    const a = ((loud ? 0.18 : 0.12) + Math.random() * (loud ? 0.4 : 0.22)) * fade(edge);
     Object.assign(d, {
       edge,
       y: initial ? Math.random() * h : -Math.random() * h * 0.4,
       len: 18 + Math.random() * (loud ? 90 : 50),
       speed: (loud ? 2.2 : 1.4) + Math.random() * (loud ? 4 : 2),
-      c: colors[Math.floor(Math.random() * colors.length)],
-      a: ((loud ? 0.18 : 0.12) + Math.random() * (loud ? 0.4 : 0.22)) * fade(edge),
       lw: Math.random() < 0.12 ? 2 : 1,
+      // Colour strings are built once per streak, not every frame.
+      stroke: `rgba(${c}, ${a})`,
+      head: `rgba(${c}, ${Math.min(1, a * 2)})`,
     });
     return d;
   };
@@ -123,13 +126,13 @@ export function initAmbient() {
       const { ctx } = sides[d.side];
       const x = xFor(d.side, d.edge);
       ctx.globalAlpha = 1;
-      ctx.strokeStyle = `rgba(${d.c}, ${d.a})`;
+      ctx.strokeStyle = d.stroke;
       ctx.lineWidth = d.lw;
       ctx.beginPath();
       ctx.moveTo(x, d.y - len);
       ctx.lineTo(x, d.y);
       ctx.stroke();
-      ctx.fillStyle = `rgba(${d.c}, ${Math.min(1, d.a * 2)})`;
+      ctx.fillStyle = d.head;
       ctx.fillRect(x - d.lw / 2, d.y - 1, d.lw + 0.5, 2);
     }
   });

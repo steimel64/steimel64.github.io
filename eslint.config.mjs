@@ -1,0 +1,65 @@
+// ESLint flat config. Self-contained (no plugins or shared configs) so it runs
+// with a bare `npx eslint .` and nothing to install.
+const browserGlobals = [
+  'window',
+  'document',
+  'navigator',
+  'location',
+  'console',
+  'performance',
+  'requestAnimationFrame',
+  'cancelAnimationFrame',
+  'setTimeout',
+  'clearTimeout',
+  'setInterval',
+  'IntersectionObserver',
+  'ResizeObserver',
+  'Image',
+  'Node',
+  'URL',
+  'innerWidth',
+  'innerHeight',
+  'devicePixelRatio',
+  'getComputedStyle',
+];
+
+export default [
+  { ignores: ['media/**', 'tools/**'] },
+  {
+    files: ['**/*.js', '**/*.mjs'],
+    languageOptions: {
+      ecmaVersion: 2023,
+      sourceType: 'module',
+      globals: Object.fromEntries(browserGlobals.map((name) => [name, 'readonly'])),
+    },
+    linterOptions: { reportUnusedDisableDirectives: 'error' },
+    rules: {
+      // Correctness
+      'no-undef': 'error',
+      'no-unused-vars': ['error', { args: 'after-used', caughtErrors: 'none' }],
+      'no-unreachable': 'error',
+      'no-dupe-keys': 'error',
+      'no-dupe-else-if': 'error',
+      'no-duplicate-case': 'error',
+      'no-fallthrough': 'error',
+      'no-cond-assign': 'error',
+      'no-self-assign': 'error',
+      'no-self-compare': 'error',
+      'no-unsafe-finally': 'error',
+      'no-unsafe-negation': 'error',
+      'no-constant-binary-expression': 'error',
+      'no-constant-condition': ['error', { checkLoops: false }],
+      'no-empty': ['error', { allowEmptyCatch: true }],
+      'no-useless-escape': 'error',
+      'no-shadow-restricted-names': 'error',
+      'use-isnan': 'error',
+      'valid-typeof': 'error',
+      // Style that prevents bugs
+      eqeqeq: ['error', 'smart'],
+      'prefer-const': 'error',
+      'no-var': 'error',
+      'no-implicit-globals': 'error',
+      'no-console': ['error', { allow: ['warn', 'error'] }],
+    },
+  },
+];

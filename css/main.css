@@ -1031,6 +1031,25 @@ button {
   gap: 0 0.4em;
   align-items: baseline;
 }
+/* The cycling role: amber mono in English, pulsing to magenta katakana in the
+   site's Japanese face. Width is reserved for the longest role so the line
+   never reflows as the words change. */
+.hero__role-rotate {
+  display: inline-block;
+  min-width: 18ch;
+  color: var(--shield);
+  /* Latin from Martian Mono, katakana from the Japanese face (whose subset has
+     no Latin), then the usual mono fallbacks. */
+  font-family: 'Martian Mono', 'Dela Gothic One', var(--font-data);
+  font-size: 0.82em;
+  transition:
+    color 0.35s,
+    text-shadow 0.35s;
+}
+.hero__role-rotate.is-kana {
+  color: var(--signal);
+  text-shadow: 0 0 0.7em rgb(255 43 209 / 0.6);
+}
 .hero__name {
   font-size: var(--step-5);
   font-weight: 800;

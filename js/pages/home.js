@@ -1,13 +1,15 @@
-// Home: the film-shader hero, the scroll-lit statement, the three practices
+// Home: the film-shader hero and its cycling roles, the scroll-lit statement, the three practices
 // (the Engineering panel runs the trust-run graphic; the studio clip plays only
 // on screen) and the Background timeline, whose line draws in as it scrolls past.
 import { initHeroFilm } from '../gl/hero-film.js';
-import { onFrame, reducedMotion, whileVisible, clamp, trackBox, changed } from '../core/env.js';
+import { onFrame, reducedMotion, whileVisible, clamp, trackBox, changed, wait } from '../core/env.js';
 import { autoplayClips } from '../core/media.js';
+import { scramble } from '../core/scramble.js';
 import { initTrustRun } from '../fx/trust-run.js';
 
 export function init() {
   hero();
+  roles();
   statement();
   autoplayClips();
   flow();
@@ -29,6 +31,50 @@ function hero() {
   }
   section.querySelector('.hero__still')?.remove();
   initHeroFilm({ section, canvas, video });
+}
+
+// The artist half of the hero line cycles through roles. Each one holds, pulses
+// into its katakana reading, then scrambles into the next role. The cycle waits
+// while the hero is off screen or the tab is hidden.
+const ROLE_HOLD = 2200;
+const KANA_HOLD = 1100;
+function roles() {
+  const el = document.querySelector('[data-roles]');
+  if (!el || reducedMotion()) return;
+  let list;
+  try {
+    list = JSON.parse(el.dataset.roles);
+  } catch {
+    return;
+  }
+  if (list.length < 2) return;
+
+  let visible = true;
+  let resume = null;
+  whileVisible(
+    el,
+    (v) => {
+      visible = v;
+      if (v && resume) resume();
+    },
+    '0px',
+  );
+  const hold = async (ms) => {
+    await wait(ms);
+    while (!visible) await new Promise((r) => (resume = r));
+    resume = null;
+  };
+
+  (async () => {
+    for (let i = 0; ; i = (i + 1) % list.length) {
+      await hold(ROLE_HOLD);
+      el.classList.add('is-kana');
+      await scramble(el, list[i][1], { duration: 550 });
+      await hold(KANA_HOLD);
+      el.classList.remove('is-kana');
+      await scramble(el, list[(i + 1) % list.length][0], { duration: 650 });
+    }
+  })();
 }
 
 // Words light up as the statement scrolls through the middle of the screen.

@@ -52,6 +52,8 @@ Every effect is built to keep the same look on modest hardware:
   full-screen layer is repainted or masked every frame.
 - Glows on canvas use pre-drawn sprites and layered strokes instead of `shadowBlur`.
 - YouTube loads only when a video is played. Images are responsive and lazy-loaded; the hero still is preloaded.
+- Phones get a 720p version of the hero loop: less to download, decode and copy into WebGL each frame. If a phone
+  refuses to autoplay (iOS Low Power Mode, Android data saver), the loops start on the first tap.
 - `prefers-reduced-motion` turns off autoplay, shaders, the boot screen and transitions.
 
 ## Accessibility and privacy

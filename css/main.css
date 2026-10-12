@@ -992,16 +992,16 @@ button {
   object-fit: cover;
 }
 /* The plain video shows (and autoplays) by default, so the banner moves even
-   without JavaScript; once the WebGL pass is running it takes over. */
+   without JavaScript; once the WebGL pass is running, its opaque canvas covers
+   the video. The video itself stays visible underneath: iOS Safari can pause
+   muted autoplay video that it treats as hidden, which would freeze the frames
+   the shader reads. */
 .hero__media::after {
   content: '';
   position: absolute;
   inset: 0;
   z-index: 2;
   background: linear-gradient(to top, var(--night) 5%, rgb(7 6 13 / 0.3) 55%, rgb(7 6 13 / 0.55));
-}
-.hero--gl .hero__media video {
-  opacity: 0;
 }
 .hero--gl .hero__media::after {
   display: none;

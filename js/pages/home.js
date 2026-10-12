@@ -36,8 +36,11 @@ function hero() {
 // The artist half of the hero line cycles through roles. Each one holds, pulses
 // into its katakana reading, then scrambles into the next role. The cycle waits
 // while the hero is off screen or the tab is hidden.
-const ROLE_HOLD = 2200;
-const KANA_HOLD = 1100;
+// About 2.6 s per role, the original cadence.
+const ROLE_HOLD = 1200;
+const KANA_HOLD = 600;
+const SCRAMBLE_IN = 380;
+const SCRAMBLE_OUT = 420;
 function roles() {
   const el = document.querySelector('[data-roles]');
   if (!el || reducedMotion()) return;
@@ -69,10 +72,10 @@ function roles() {
     for (let i = 0; ; i = (i + 1) % list.length) {
       await hold(ROLE_HOLD);
       el.classList.add('is-kana');
-      await scramble(el, list[i][1], { duration: 550 });
+      await scramble(el, list[i][1], { duration: SCRAMBLE_IN });
       await hold(KANA_HOLD);
       el.classList.remove('is-kana');
-      await scramble(el, list[(i + 1) % list.length][0], { duration: 650 });
+      await scramble(el, list[(i + 1) % list.length][0], { duration: SCRAMBLE_OUT });
     }
   })();
 }

@@ -992,16 +992,16 @@ button {
   object-fit: cover;
 }
 /* The plain video shows (and autoplays) by default, so the banner moves even
-   without JavaScript; once the WebGL pass is running it takes over. */
+   without JavaScript; once the WebGL pass is running, its opaque canvas covers
+   the video. The video itself stays visible underneath: iOS Safari can pause
+   muted autoplay video that it treats as hidden, which would freeze the frames
+   the shader reads. */
 .hero__media::after {
   content: '';
   position: absolute;
   inset: 0;
   z-index: 2;
   background: linear-gradient(to top, var(--night) 5%, rgb(7 6 13 / 0.3) 55%, rgb(7 6 13 / 0.55));
-}
-.hero--gl .hero__media video {
-  opacity: 0;
 }
 .hero--gl .hero__media::after {
   display: none;
@@ -1030,6 +1030,25 @@ button {
   flex-wrap: wrap;
   gap: 0 0.4em;
   align-items: baseline;
+}
+/* The cycling role: amber mono in English, pulsing to magenta katakana in the
+   site's Japanese face. Width is reserved for the longest role so the line
+   never reflows as the words change. */
+.hero__role-rotate {
+  display: inline-block;
+  min-width: 18ch;
+  color: var(--shield);
+  /* Latin from Martian Mono, katakana from the Japanese face (whose subset has
+     no Latin), then the usual mono fallbacks. */
+  font-family: 'Martian Mono', 'Dela Gothic One', var(--font-data);
+  font-size: 0.82em;
+  transition:
+    color 0.18s,
+    text-shadow 0.18s;
+}
+.hero__role-rotate.is-kana {
+  color: var(--signal);
+  text-shadow: 0 0 0.7em rgb(255 43 209 / 0.6);
 }
 .hero__name {
   font-size: var(--step-5);

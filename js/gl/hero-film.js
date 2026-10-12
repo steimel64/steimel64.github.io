@@ -3,6 +3,7 @@
 // and the frame tears in short glitch bursts. Falls back to the plain video.
 import { createQuad } from './gl.js';
 import { onFrame, pointer, lerp, whileVisible, trackBox, quality } from '../core/env.js';
+import { playVideo, pauseVideo } from '../core/media.js';
 
 const FRAG = `
 precision highp float;
@@ -100,7 +101,7 @@ export function initHeroFilm({ section, canvas, video }) {
     quad = null;
   }
   if (!quad) {
-    video.play().catch(() => {});
+    playVideo(video);
     return null;
   }
   section.classList.add('hero--gl');
@@ -137,9 +138,17 @@ export function initHeroFilm({ section, canvas, video }) {
     introStart = performance.now();
   };
   if (video.poster) still.src = video.poster;
+
+  // Upload each video frame once. requestVideoFrameCallback says exactly when a
+  // new frame is ready, but some mobile browsers never call it for a video that
+  // is only drawn through WebGL; until it has fired, a change in currentTime
+  // counts as a new frame instead.
+  let frameCallbacks = false;
+  let lastTime = -1;
   const markFrame = () => {
     fresh = true;
-    if ('requestVideoFrameCallback' in video) video.requestVideoFrameCallback(markFrame);
+    frameCallbacks = true;
+    video.requestVideoFrameCallback(markFrame);
   };
   if ('requestVideoFrameCallback' in video) video.requestVideoFrameCallback(markFrame);
 
@@ -148,8 +157,8 @@ export function initHeroFilm({ section, canvas, video }) {
     section,
     (v) => {
       visible = v;
-      if (v) video.play().catch(() => {});
-      else video.pause();
+      if (v) playVideo(video);
+      else pauseVideo(video);
     },
     '0px',
   );
@@ -178,10 +187,12 @@ export function initHeroFilm({ section, canvas, video }) {
     }
     glitch *= 0.93;
 
-    if (video.readyState >= 2 && !video.paused && (fresh || !('requestVideoFrameCallback' in video))) {
+    const newFrame = frameCallbacks ? fresh : video.currentTime !== lastTime;
+    if (video.readyState >= 2 && !video.paused && newFrame) {
       upload(video);
       size = { w: video.videoWidth, h: video.videoHeight };
       fresh = false;
+      lastTime = video.currentTime;
       if (!hasFrame) {
         hasFrame = true;
         introStart = now;
@@ -201,6 +212,6 @@ export function initHeroFilm({ section, canvas, video }) {
     quad.draw();
   });
 
-  video.play().catch(() => {});
+  playVideo(video);
   return {};
 }
